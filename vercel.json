@@ -2,8 +2,10 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/:path*", "has": [{ "type": "host", "value": "www.gevix.in" }], "destination": "https://gevix.in/:path*", "permanent": true },
-    { "source": "/:path*", "has": [{ "type": "host", "value": "gevix-ashen.vercel.app" }], "destination": "https://gevix.in/:path*", "permanent": true }
+    { "source": "/", "has": [{ "type": "host", "value": "www.gevix.in" }], "destination": "https://gevix.in/", "permanent": true },
+    { "source": "/:path+", "has": [{ "type": "host", "value": "www.gevix.in" }], "destination": "https://gevix.in/:path+", "permanent": true },
+    { "source": "/", "has": [{ "type": "host", "value": "gevix-ashen.vercel.app" }], "destination": "https://gevix.in/", "permanent": true },
+    { "source": "/:path+", "has": [{ "type": "host", "value": "gevix-ashen.vercel.app" }], "destination": "https://gevix.in/:path+", "permanent": true }
   ],
   "headers": [
     { "source": "/(.*)", "headers": [

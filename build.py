@@ -156,9 +156,9 @@ def article_page(i, p):
 for i, p in enumerate(posts):
     (ROOT / "blog" / f"{p['slug']}.html").write_text(article_page(i, p))
 
-today = datetime.date.today().isoformat()
-urls = [(SITE + "/", today), (SITE + "/work", today), (SITE + "/blog", today)]
-urls += [(f"{SITE}/blog/{p['slug']}", today) for p in posts]
+latest = max(iso(p["date"]) for p in posts)
+urls = [(SITE + "/", latest), (SITE + "/work", latest), (SITE + "/blog", latest)]
+urls += [(f"{SITE}/blog/{p['slug']}", iso(p["date"])) for p in posts]
 sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
 sm += [f"  <url><loc>{u}</loc><lastmod>{d}</lastmod></url>" for u, d in urls]
 sm.append("</urlset>")
