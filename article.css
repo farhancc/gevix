@@ -26,3 +26,4 @@
 .post-nav a.next{text-align:right;align-items:flex-end}
 .more h2{margin-bottom:24px}
 @media (max-width:640px){.post-nav{grid-template-columns:1fr}.post-nav a.next{text-align:left;align-items:flex-start}}
+.post-hero.on-cobalt .crumb,.post-hero.on-cobalt .byline div span,.post-hero.on-cobalt .sep{opacity:.95}
