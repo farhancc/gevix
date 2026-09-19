@@ -251,8 +251,9 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 .glyph::before,.glyph::after{content:"";position:absolute;border:2.5px solid var(--ink)}
 .glyph-web::before{inset:0;border-radius:8px}
 .glyph-web::after{left:0;right:0;top:10px;border-width:0 0 2.5px 0}
-.glyph-mobile::before{left:50%;width:22px;top:-2px;bottom:-2px;border-radius:7px;transform:translateX(-50%)}
-.glyph-mobile::after{left:50%;width:10px;bottom:1px;border-width:0 0 2.5px 0;transform:translateX(-50%)}
+.glyph-mobile::before{left:50%;top:2px;width:24px;height:38px;border-radius:6px;transform:translateX(-50%)}
+.glyph-mobile::after{left:50%;top:7px;width:6px;height:2px;background:var(--ink);border:none;transform:translateX(-50%);border-radius:1px;box-shadow:0 24px 0 0 var(--ink)}
+.tile-cobalt .glyph-mobile::after{background:var(--white);box-shadow:0 24px 0 0 var(--white)}
 .glyph-saas::before{inset:0;border-radius:8px}
 .glyph-saas::after{left:13px;top:0;bottom:0;border-width:0 0 0 2.5px}
 .glyph-site::before{inset:0;border-radius:8px}
