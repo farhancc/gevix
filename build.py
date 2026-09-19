@@ -36,7 +36,7 @@ def esc(s):
 def cover(p):
     if p["color"] == "cobalt":
         return (f'<div class="cover" style="background:var(--cobalt);color:#fff">'
-                f'<span style="background:rgba(255,255,255,.2)">{p["cat"]}</span></div>')
+                f'<span style="background:rgba(18,17,26,.3)">{p["cat"]}</span></div>')
     return f'<div class="cover" style="background:var(--{p["color"]})"><span>{p["cat"]}</span></div>'
 
 
