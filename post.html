@@ -43,38 +43,6 @@
   --r-lg:28px;
   --r-md:18px;
 }
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    color-scheme:dark;
-    --bg:#12111A;
-    --fg:#F3F1EA;
-    --fg-muted:#A6A4B2;
-    --deep:#07070B;
-    --deep-fg:#F3F1EA;
-    --surface:#1E1D28;
-    --panel:#262532;
-    --chip:#2C2B3A;
-    --header:rgba(18,17,26,.82);
-    --hover:rgba(243,241,234,.09);
-    --line:rgba(243,241,234,.16);
-    --mock-line:#2E2D3A;
-  }
-}
-:root[data-theme="dark"]{
-    color-scheme:dark;
-    --bg:#12111A;
-    --fg:#F3F1EA;
-    --fg-muted:#A6A4B2;
-    --deep:#07070B;
-    --deep-fg:#F3F1EA;
-    --surface:#1E1D28;
-    --panel:#262532;
-    --chip:#2C2B3A;
-    --header:rgba(18,17,26,.82);
-    --hover:rgba(243,241,234,.09);
-    --line:rgba(243,241,234,.16);
-    --mock-line:#2E2D3A;
-  }
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
@@ -116,17 +84,6 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 .top nav a{text-decoration:none;font-size:15px;font-weight:500;padding:8px 14px;border-radius:999px}
 .top nav a:hover{background:var(--hover)}
 .top-inner .btn{margin-left:auto;padding:11px 20px}
-.theme{margin-left:auto;width:42px;height:42px;border-radius:50%;border:2px solid var(--line);background:transparent;color:var(--fg);display:grid;place-items:center;cursor:pointer;padding:0;transition:background-color .15s,border-color .15s}
-.theme:hover{background:var(--hover);border-color:var(--fg)}
-.theme svg{width:20px;height:20px;display:block}
-.theme .moon{display:none}
-:root[data-theme="dark"] .theme .sun{display:none}
-:root[data-theme="dark"] .theme .moon{display:block}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]) .theme .sun{display:none}
-  :root:not([data-theme="light"]) .theme .moon{display:block}
-}
-.theme + .btn{margin-left:0}
 .menu{display:none;position:relative}
 .menu summary{list-style:none;cursor:pointer;font-weight:600;font-size:15px;padding:8px 4px}
 .menu summary::-webkit-details-marker{display:none}
@@ -252,14 +209,14 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 @media (prefers-reduced-motion:reduce){.post:hover{transform:none}}
 
 /* whatsapp */
-.wa{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:30;display:flex;align-items:center;gap:10px;height:56px;padding:0 4px 0 0;border-radius:999px;background:#25D366;color:#fff;text-decoration:none;box-shadow:0 12px 30px rgba(18,17,26,.28);transition:transform .15s,box-shadow .15s}
+.wa{position:fixed;right:20px;bottom:calc(28px + env(safe-area-inset-bottom,0px));z-index:30;display:flex;align-items:center;gap:10px;height:56px;padding:0 4px 0 0;border-radius:999px;background:#25D366;color:#fff;text-decoration:none;box-shadow:0 12px 30px rgba(18,17,26,.28);transition:transform .15s,box-shadow .15s}
 .wa svg{width:56px;height:56px;padding:13px;display:block;flex:none}
 .wa span{max-width:0;overflow:hidden;white-space:nowrap;font-weight:700;font-size:15px;transition:max-width .25s ease,padding .25s ease}
 .wa:hover,.wa:focus-visible{transform:translateY(-2px);box-shadow:0 16px 36px rgba(18,17,26,.32)}
 .wa:hover span,.wa:focus-visible span{max-width:160px;padding-right:18px}
 .wa:focus-visible{outline:3px solid var(--fg);outline-offset:3px}
 @media (prefers-reduced-motion:reduce){.wa,.wa span{transition:none}.wa:hover{transform:none}}
-@media (max-width:720px){.wa{right:16px}}
+@media (max-width:720px){.wa{right:16px;bottom:calc(32px + env(safe-area-inset-bottom,0px))}}
 
 /* ticker */
 .ticker{overflow:hidden;padding-block:18px;white-space:nowrap}
@@ -424,9 +381,6 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
   .fan{--tx:80px;--w:clamp(140px,40vw,180px)}
 }
 </style>
-<script>
-(function(){try{var t=localStorage.getItem('gevix-theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();
-</script>
 <style>
 .blog-hero{padding-block:clamp(56px,7vw,96px)}
 .blog-hero p{max-width:52ch;font-size:1.1rem;opacity:.85;margin-top:16px}
@@ -489,10 +443,6 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
       <a href="/#faq">FAQ</a>
       <a href="/blog" aria-current="page" style="background:var(--hover)">Blog</a>
     </nav>
-    <button class="theme" id="themeToggle" type="button" aria-label="Switch to dark theme">
-      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
-      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
-    </button>
     <a class="btn btn-cobalt" href="/#contact">Start a project</a>
     <details class="menu">
       <summary>Menu</summary>
@@ -647,22 +597,6 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 </script>
 <script>
 (function(){
-  var root=document.documentElement,toggle=document.getElementById('themeToggle');
-  function current(){
-    var t=root.getAttribute('data-theme');
-    if(t==='dark'||t==='light') return t;
-    return window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
-  }
-  function label(){ toggle.setAttribute('aria-label',current()==='dark'?'Switch to light theme':'Switch to dark theme'); }
-  toggle.addEventListener('click',function(){
-    var next=current()==='dark'?'light':'dark';
-    root.setAttribute('data-theme',next);
-    try{localStorage.setItem('gevix-theme',next);}catch(e){}
-    label();
-  });
-  label();
-  if(window.matchMedia){ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',label); }
-
   var menu=document.querySelector('.menu');
   if(menu){
     menu.addEventListener('click',function(e){ if(e.target.closest('a')) menu.removeAttribute('open'); });
