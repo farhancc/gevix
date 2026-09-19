@@ -61,7 +61,7 @@ def article_page(i, p):
     nxt = posts[i + 1] if i < len(posts) - 1 else None
     url = f"{SITE}/blog/{p['slug']}"
     on = "on-cobalt" if p["color"] == "cobalt" else f"on-{p['color']}"
-    pill = ' style="background:rgba(255,255,255,.2)"' if p["color"] == "cobalt" else ""
+    pill = ' style="background:rgba(18,17,26,.3)"' if p["color"] == "cobalt" else ""
     title = f"{p['title']} | Gevix"
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "BlogPosting", "@id": url + "#article", "headline": p["title"], "description": p["ex"],
