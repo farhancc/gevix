@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%276%27 y=%276%27 width=%2720%27 height=%2720%27 rx=%275%27 transform=%27rotate(12 16 16)%27 fill=%27%232B3FFF%27/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="favicon.png">
 <title>Gevix Writing</title>
 <meta name="description" content="An article from the Gevix studio blog on how software products get designed and built.">
 <meta name="robots" content="index,follow">
@@ -78,8 +78,8 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 /* header */
 .top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--header);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
 .top-inner{display:flex;align-items:center;gap:32px;padding-block:14px}
-.brand{font-family:var(--display);font-weight:800;font-size:1.35rem;letter-spacing:-.02em;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
-.brand i{width:14px;height:14px;border-radius:4px;background:var(--cobalt);display:inline-block;transform:rotate(12deg)}
+.brand{text-decoration:none;display:inline-flex;align-items:center}
+.brand img{height:28px;width:auto;display:block}
 .top nav{display:flex;gap:4px;margin-left:8px}
 .top nav a{text-decoration:none;font-size:15px;font-weight:500;padding:8px 14px;border-radius:999px}
 .top nav a:hover{background:var(--hover)}
@@ -247,8 +247,8 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 .glyph::before,.glyph::after{content:"";position:absolute;border:2.5px solid var(--ink)}
 .glyph-web::before{inset:0;border-radius:8px}
 .glyph-web::after{left:0;right:0;top:10px;border-width:0 0 2.5px 0}
-.glyph-mobile::before{left:18px;width:20px;top:-4px;bottom:-4px;border-radius:7px}
-.glyph-mobile::after{left:24px;width:8px;top:-1px;border-width:0 0 2.5px 0}
+.glyph-mobile::before{left:50%;width:22px;top:-2px;bottom:-2px;border-radius:7px;transform:translateX(-50%)}
+.glyph-mobile::after{left:50%;width:10px;bottom:1px;border-width:0 0 2.5px 0;transform:translateX(-50%)}
 .glyph-saas::before{inset:0;border-radius:8px}
 .glyph-saas::after{left:13px;top:0;bottom:0;border-width:0 0 0 2.5px}
 .glyph-site::before{inset:0;border-radius:8px}
@@ -435,7 +435,7 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 <body>
 <header class="top">
   <div class="wrap top-inner">
-    <a class="brand" href="/"><i aria-hidden="true"></i>Gevix</a>
+    <a class="brand" href="/"><img src="gevix-logo.png" alt="Gevix" height="28"></a>
     <nav aria-label="Sections">
       <a href="/work">Work</a>
       <a href="/#services">Services</a>
