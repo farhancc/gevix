@@ -5,20 +5,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<title>Our Work: Web, Mobile &amp; SaaS Case Studies | Gevix</title>
-<meta name="description" content="Case studies from Gevix: websites, web apps, mobile apps and SaaS products we have designed and built, with what we did and what changed.">
+<title>Thirty days after launch: what breaks | Gevix</title>
+<meta name="description" content="The bugs that only real users find, and why we keep the team on for a month.">
 <meta name="robots" content="index,follow">
-<link rel="canonical" href="https://gevix.in/work">
-<meta property="og:url" content="https://gevix.in/work">
-<meta property="og:type" content="website">
+<link rel="canonical" href="https://gevix.in/blog/thirty-days">
+<meta property="og:url" content="https://gevix.in/blog/thirty-days">
+<meta property="og:type" content="article">
 <meta property="og:site_name" content="Gevix">
-<meta property="og:title" content="Work by Gevix">
-<meta property="og:description" content="Case studies from Gevix: websites, web apps, mobile apps and SaaS products, with what we did and what changed.">
+<meta property="og:title" content="Thirty days after launch: what breaks">
+<meta property="og:description" content="The bugs that only real users find, and why we keep the team on for a month.">
+<meta property="og:image" content="https://gevix.in/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-05-06">
+<meta property="article:section" content="Engineering">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Thirty days after launch: what breaks">
+<meta name="twitter:description" content="The bugs that only real users find, and why we keep the team on for a month.">
+<meta name="twitter:image" content="https://gevix.in/og-image.png">
 <meta name="theme-color" content="#2B3FFF">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "@id": "https://gevix.in/work", "url": "https://gevix.in/work", "name": "Work by Gevix", "isPartOf": {"@id": "https://gevix.in/#website"}, "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "CreativeWork", "name": "Ledgerly", "url": "https://gevix.in/work#ledgerly", "creator": {"@id": "https://gevix.in/#org"}}}, {"@type": "ListItem", "position": 2, "item": {"@type": "CreativeWork", "name": "Northloop", "url": "https://gevix.in/work#northloop", "creator": {"@id": "https://gevix.in/#org"}}}, {"@type": "ListItem", "position": 3, "item": {"@type": "CreativeWork", "name": "Cartwright", "url": "https://gevix.in/work#cartwright", "creator": {"@id": "https://gevix.in/#org"}}}, {"@type": "ListItem", "position": 4, "item": {"@type": "CreativeWork", "name": "Halden Studio", "url": "https://gevix.in/work#halden-studio", "creator": {"@id": "https://gevix.in/#org"}}}, {"@type": "ListItem", "position": 5, "item": {"@type": "CreativeWork", "name": "Pillar Health", "url": "https://gevix.in/work#pillar-health", "creator": {"@id": "https://gevix.in/#org"}}}, {"@type": "ListItem", "position": 6, "item": {"@type": "CreativeWork", "name": "Nordwall Films", "url": "https://gevix.in/work#nordwall-films", "creator": {"@id": "https://gevix.in/#org"}}}, {"@type": "ListItem", "position": 7, "item": {"@type": "CreativeWork", "name": "Bright & Co", "url": "https://gevix.in/work#bright-co", "creator": {"@id": "https://gevix.in/#org"}}}, {"@type": "ListItem", "position": 8, "item": {"@type": "CreativeWork", "name": "Marlow Interiors", "url": "https://gevix.in/work#marlow-interiors", "creator": {"@id": "https://gevix.in/#org"}}}]}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://gevix.in/blog/thirty-days#article", "headline": "Thirty days after launch: what breaks", "description": "The bugs that only real users find, and why we keep the team on for a month.", "url": "https://gevix.in/blog/thirty-days", "mainEntityOfPage": "https://gevix.in/blog/thirty-days", "datePublished": "2026-05-06", "dateModified": "2026-05-06", "author": {"@type": "Person", "name": "Jonas Weber", "jobTitle": "Mobile engineer"}, "publisher": {"@id": "https://gevix.in/#org"}, "image": "https://gevix.in/og-image.png", "articleSection": "Engineering", "wordCount": 179, "inLanguage": "en", "isPartOf": {"@id": "https://gevix.in/blog#blog"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gevix.in/"}, {"@type": "ListItem", "position": 2, "name": "Writing", "item": "https://gevix.in/blog"}, {"@type": "ListItem", "position": 3, "name": "Thirty days after launch: what breaks", "item": "https://gevix.in/blog/thirty-days"}]}]}</script>
 <link rel="preload" href="/fonts/unbounded-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/onest-400.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'Onest';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/onest-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Onest';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/onest-500.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Onest';font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/onest-600.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Onest';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/onest-700.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Unbounded';font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/unbounded-600.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Unbounded';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/unbounded-700.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Unbounded';font-style:normal;font-weight:800;font-display:swap;src:url(/fonts/unbounded-800.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
 <style>@font-face{font-family:'Onest';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/onest-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 @font-face{font-family:'Onest';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/onest-500.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 @font-face{font-family:'Onest';font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/onest-600.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
@@ -283,7 +298,7 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 .work-frame{display:flex;justify-content:center;min-width:0;padding:clamp(8px,2vw,24px)}
 .work-frame .phone{width:min(250px,60%);container-type:inline-size;margin:0}
 .work-text{display:flex;flex-direction:column;gap:14px;min-width:0}
-.work-text h2{font-size:clamp(1.4rem,2.2vw,1.9rem)}
+.work-text h3{font-size:clamp(1.4rem,2.2vw,1.9rem)}
 .work-text p{opacity:.8}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
 .tags span{padding:6px 12px;border-radius:999px;background:rgba(18,17,26,.1);font-size:13px;font-weight:600}
@@ -319,7 +334,14 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 .quotes footer i{flex:none;width:40px;height:40px;border-radius:50%;color:var(--paper);background:var(--ink);font-style:normal;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:15px}
 .quotes footer span{display:block;font-weight:400;opacity:.75}
 
-/* stack */
+/* team + stack */
+.two{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(40px,6vw,96px);align-items:start}
+.team{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.team figure{margin:0;display:flex;flex-direction:column;gap:10px;min-width:0}
+.avatar{aspect-ratio:1;border-radius:var(--r-lg);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:clamp(2rem,3.8vw,3.2rem);letter-spacing:-.03em;color:var(--ink)}
+.avatar.c1{background:var(--cobalt);color:var(--white)}.avatar.c2{background:var(--lime)}.avatar.c3{background:var(--coral)}.avatar.c4{background:var(--butter)}
+.team figcaption b{display:block;font-weight:700}
+.team figcaption span{opacity:.75;font-size:15px}
 .stack{margin:0;display:flex;flex-direction:column}
 .stack div{display:grid;grid-template-columns:130px 1fr;gap:16px;padding-block:16px;border-top:1px solid var(--line)}
 .stack div:last-child{border-bottom:1px solid var(--line)}
@@ -363,6 +385,7 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
   .tiles{grid-template-columns:repeat(2,1fr)}
   .hero-grid{grid-template-columns:1fr}
   .fan{height:clamp(340px,70vw,460px);--w:clamp(150px,26vw,210px);--tx:min(120px,26vw)}
+  .two{grid-template-columns:1fr}
   .steps{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:900px){
@@ -382,28 +405,39 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 }
 @media (max-width:520px){
   .steps{grid-template-columns:1fr}
+  .team{gap:12px}
   .fan{--tx:80px;--w:clamp(140px,40vw,180px)}
 }
 </style>
 <style>
-.on-lime{background:var(--lime);color:var(--ink)}
-.work-hero{padding-block:clamp(56px,7vw,96px)}
-.work-hero h1{font-size:clamp(2.4rem,5.5vw,4.6rem)}
-.work-hero p{max-width:52ch;font-size:1.1rem;opacity:.85;margin-top:16px}
-.filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
-.filters button{font:inherit;font-weight:700;font-size:14px;padding:9px 16px;border-radius:999px;border:0;background:rgba(18,17,26,.1);color:var(--ink);cursor:pointer}
-.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
-.filters button:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
-.did{margin:4px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;font-size:.98rem}
-.work .did li{display:block;grid-template-columns:none;gap:0;padding:0 0 0 20px;border-radius:0;position:relative;background:none}
-.did li::before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;border-radius:50%;background:var(--ink)}
-.work li[hidden]{display:none}
-.count{font-size:15px;opacity:.7;margin-bottom:20px}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.stats div{background:rgba(255,255,255,.14);border-radius:var(--r-lg);padding:26px 26px 22px}
-.stats b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.03em;line-height:1}
-.stats span{display:block;margin-top:10px;opacity:.85}
-@media (max-width:820px){.stats{grid-template-columns:repeat(2,1fr)}}
+.post-hero{padding-block:clamp(48px,6vw,88px)}
+.post-hero .crumb{display:inline-block;text-decoration:none;font-weight:700;font-size:14px;opacity:.75;margin-bottom:22px}
+.post-hero .crumb::before{content:"\2190\00a0"}
+.post-hero .cat{display:block;width:max-content;background:rgba(18,17,26,.12);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700;margin-bottom:20px}
+.post-hero h1{font-size:clamp(2rem,4.6vw,3.8rem);max-width:20ch}
+.byline{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-top:28px;font-size:15px}
+.byline i{width:44px;height:44px;border-radius:50%;color:var(--ink);font-style:normal;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:14px}
+.byline i[style*="cobalt"]{color:#fff}
+.byline b{display:block;font-weight:700}
+.byline div span{opacity:.75}
+.byline .sep{opacity:.75}
+.byline .sep::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:currentColor;margin-right:12px;vertical-align:2px;opacity:.6}
+.article{max-width:70ch}
+.article p{font-size:1.15rem;line-height:1.65;margin-bottom:22px}
+.article h2{font-size:clamp(1.3rem,2vw,1.6rem);margin:44px 0 14px}
+.article ul{padding-left:22px;margin:0 0 22px;font-size:1.1rem;line-height:1.6}
+.article li{margin-bottom:10px}
+.article li::marker{color:var(--cobalt)}
+.article blockquote{margin:32px 0;padding:22px 28px;border-left:6px solid var(--accent,var(--cobalt));border-radius:0 var(--r-md) var(--r-md) 0;background:var(--surface);font-family:var(--display);font-weight:500;font-size:clamp(1.1rem,1.8vw,1.35rem);line-height:1.4;letter-spacing:-.01em}
+.article code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9em;background:var(--chip);padding:2px 6px;border-radius:6px}
+.post-nav{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:56px;padding-top:32px;border-top:1px solid var(--line)}
+.post-nav a{text-decoration:none;display:flex;flex-direction:column;gap:6px;padding:18px 20px;border-radius:var(--r-md);background:var(--surface)}
+.post-nav a:hover{background:var(--hover)}
+.post-nav a span{font-size:13px;font-weight:700;opacity:.65}
+.post-nav a b{font-family:var(--display);font-weight:600;font-size:1rem;line-height:1.3}
+.post-nav a.next{text-align:right;align-items:flex-end}
+.more h2{margin-bottom:24px}
+@media (max-width:640px){.post-nav{grid-template-columns:1fr}.post-nav a.next{text-align:left;align-items:flex-start}}
 </style>
 </head>
 <body>
@@ -411,21 +445,21 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
   <div class="wrap top-inner">
     <a class="brand" href="/"><img src="/logo.png" alt="Gevix" width="84" height="28"></a>
     <nav aria-label="Sections">
-      <a href="/work" aria-current="page" style="background:var(--hover)">Work</a>
+      <a href="/work">Work</a>
       <a href="/#services">Services</a>
       <a href="/#clients">Clients</a>
       <a href="/#faq">FAQ</a>
-      <a href="/blog">Blog</a>
+      <a href="/blog" aria-current="page" style="background:var(--hover)">Blog</a>
     </nav>
     <a class="btn btn-cobalt" href="/#contact">Start a project</a>
     <details class="menu">
       <summary>Menu</summary>
       <div class="menu-list">
-        <a href="#">Work</a>
+        <a href="/work">Work</a>
         <a href="/#services">Services</a>
         <a href="/#clients">Clients</a>
         <a href="/#faq">FAQ</a>
-        <a href="/blog">Blog</a>
+        <a href="/blog" aria-current="page" style="background:var(--hover)">Blog</a>
         <a href="/#contact">Contact</a>
       </div>
     </details>
@@ -433,260 +467,59 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 </header>
 
 <main>
-<section class="work-hero on-lime">
+<section class="post-hero on-butter">
   <div class="wrap">
-    <h1>Work</h1>
-    <p>Eight products we're proud of, across websites, web apps, mobile apps and SaaS. There are more behind NDAs; ask and we'll walk you through them on a call.</p>
-    <div class="filters" role="group" aria-label="Filter by type">
-      <button type="button" data-filter="all" aria-pressed="true">All</button>
-      <button type="button" data-filter="web" aria-pressed="false">Web apps</button>
-      <button type="button" data-filter="mobile" aria-pressed="false">Mobile apps</button>
-      <button type="button" data-filter="saas" aria-pressed="false">SaaS</button>
-      <button type="button" data-filter="website" aria-pressed="false">Websites</button>
-    </div>
+    <a class="crumb" href="/blog">Writing</a>
+    <span class="cat">Engineering</span>
+    <h1>Thirty days after launch: what breaks</h1>
+    <div class="byline"><i style="background:var(--butter)">JW</i><div><b>Jonas Weber</b><span>Mobile engineer</span></div><time class="sep" datetime="2026-05-06">6 May 2026</time><span class="sep">1 min read</span></div>
   </div>
 </section>
 
 <section class="field on-paper">
   <div class="wrap">
-    <p class="count" id="count" aria-live="polite">Showing 8 projects</p>
-    <ul class="work" id="workList">
-<li data-type="web saas" class="w-lilac" id="ledgerly">
-        <div class="work-frame" role="img" aria-label="Ledgerly invoices screen">
-          <div class="desk">
-            <div class="screen t-paper">
-              <div class="d-side">
-                <b>Ledgerly</b>
-                <span>Overview</span><span class="on">Invoices</span><span>Clients</span><span>Reports</span><span>Settings</span>
-              </div>
-              <div class="d-main">
-                <div class="d-head"><b>Invoices</b><i>New invoice</i></div>
-                <div class="d-chips"><span class="on">All 128</span><span>Sent 41</span><span>Overdue 7</span><span>Paid 80</span></div>
-                <div class="d-rows">
-                  <div class="d-th"><span>Client</span><span>Number</span><span>Amount</span><span>Status</span></div>
-                  <div><span>Halden Studio</span><span>INV-0412</span><span>$12,400</span><em class="ok">Paid</em></div>
-                  <div><span>Bright &amp; Co</span><span>INV-0411</span><span>$8,150</span><em>Sent</em></div>
-                  <div><span>Nordwall Films</span><span>INV-0409</span><span>$21,000</span><em class="warn">Overdue</em></div>
-                  <div><span>Pillar Health</span><span>INV-0408</span><span>$6,650</span><em class="ok">Paid</em></div>
-                  <div><span>Marlow Interiors</span><span>INV-0407</span><span>$4,300</span><em>Sent</em></div>
-                  <div><span>Fen &amp; Field</span><span>INV-0405</span><span>$9,900</span><em class="ok">Paid</em></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="work-text">
-          <h2>Ledgerly</h2>
-          <p>Bookkeeping SaaS for small agencies. We designed and built the product, the Stripe billing system and the accountant portal, then ran the first three months of support alongside the founders.</p>
-          <ul class="did"><li>Product design, billing and accountant portal</li><li>Stripe subscriptions with proration and invoicing</li><li>Three months of support alongside the founders</li></ul>
-          <div class="tags"><span>Web</span><span>SaaS</span><span>2025</span><span>14 weeks</span></div>
-          <p class="result">Customer onboarding cut from forty minutes to six.</p>
-        </div>
-      </li>
-<li data-type="mobile" class="w-lime" id="northloop">
-        <div class="work-frame" role="img" aria-label="Northloop ride summary screen">
-          <figure class="phone">
-            <div class="screen t-paper">
-              <div class="p-status"><span>9:41</span><i></i></div>
-              <div class="p-map">
-                <svg viewBox="0 0 100 75" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                  <polyline points="10,60 24,44 40,50 52,30 70,36 88,16" fill="none" stroke="#2B3FFF" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"></polyline>
-                  <circle cx="10" cy="60" r="2.6" fill="#12111A"></circle>
-                  <circle cx="88" cy="16" r="2.6" fill="#2B3FFF"></circle>
-                </svg>
-              </div>
-              <div>
-                <div class="p-small">Sunday long ride</div>
-                <div class="p-big">54.1 km</div>
-              </div>
-              <div class="p-grid">
-                <div><span>Time</span><b>2:14:08</b></div>
-                <div><span>Elevation</span><b>812 m</b></div>
-                <div><span>Average</span><b>24.1 km/h</b></div>
-                <div><span>Effort</span><b>High</b></div>
-              </div>
-              <div class="p-btn">Share ride</div>
-              <div class="p-tabs"><i></i><i class="on"></i><i></i><i></i></div>
-            </div>
-          </figure>
-        </div>
-        <div class="work-text">
-          <h2>Northloop</h2>
-          <p>Training app for road cyclists with ride plans, a coach chat and Strava import. One React Native codebase for both stores, with a small Node service for the coaching queue.</p>
-          <ul class="did"><li>React Native app for iOS and Android</li><li>Strava import and a coach chat with a queue</li><li>Store submission and first-year updates</li></ul>
-          <div class="tags"><span>iOS</span><span>Android</span><span>2024</span><span>16 weeks</span></div>
-          <p class="result">4.8 stars on both stores and 31,000 installs in the first year.</p>
-        </div>
-      </li>
-<li data-type="web mobile" class="w-coral" id="cartwright">
-        <div class="work-frame" role="img" aria-label="Cartwright dispatch console">
-          <div class="desk">
-            <div class="screen t-paper">
-              <div class="d-side">
-                <b>Cartwright</b>
-                <span class="on">Dispatch</span><span>Drivers</span><span>Jobs</span><span>Customers</span><span>Settings</span>
-              </div>
-              <div class="d-main">
-                <div class="d-head"><b>Dispatch</b><i>Assign job</i></div>
-                <div class="d-split">
-                  <div class="d-map">
-                    <svg viewBox="0 0 100 70" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                      <polyline points="8,58 26,44 44,50 60,26 84,20" fill="none" stroke="#12111A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" opacity=".4"></polyline>
-                      <polyline points="14,14 30,22 46,18 70,40 90,52" fill="none" stroke="#12111A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" opacity=".4"></polyline>
-                      <circle cx="44" cy="50" r="2.4" fill="#2B3FFF"></circle>
-                      <circle cx="46" cy="18" r="2.4" fill="#FF5A3C"></circle>
-                      <circle cx="84" cy="20" r="2.4" fill="#12111A"></circle>
-                      <circle cx="90" cy="52" r="2.4" fill="#12111A"></circle>
-                    </svg>
-                  </div>
-                  <div class="d-jobs">
-                    <div><span>#4821 Leeds to Hull</span><em class="ok">Moving</em></div>
-                    <div><span>#4822 Sheffield depot</span><em>Loading</em></div>
-                    <div><span>#4824 York to Leeds</span><em>Queued</em></div>
-                    <div><span>#4825 Bradford</span><em>Queued</em></div>
-                    <div><span>#4819 Manchester</span><em class="ok">Delivered</em></div>
-                    <div><span>#4818 Doncaster</span><em class="ok">Delivered</em></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="work-text">
-          <h2>Cartwright</h2>
-          <p>Dispatch platform for a regional haulage firm: a web console for the office and a driver app with offline proof of delivery. Live positions come from the drivers' phones, not extra hardware.</p>
-          <ul class="did"><li>Dispatch console for the office</li><li>Driver app with offline proof of delivery</li><li>Live positions from phones, no hardware</li></ul>
-          <div class="tags"><span>Web</span><span>iOS</span><span>Android</span><span>2024</span><span>12 weeks, then monthly team</span></div>
-          <p class="result">Replaced three spreadsheets and a WhatsApp group for 140 drivers.</p>
-        </div>
-      </li>
-<li data-type="website" class="w-butter" id="halden-studio">
-        <div class="work-frame" role="img" aria-label="Halden Studio website home page in a browser window">
-          <div class="browser">
-            <div class="screen t-paper">
-              <div class="b-bar"><i></i><i></i><i></i><span>haldenstudio.com</span></div>
-              <div class="b-site">
-                <div class="b-nav"><b>Halden</b><span>Projects Studio Journal</span><i>Enquire</i></div>
-                <div class="b-hero">
-                  <div><h4>Buildings that age well.</h4><p>An architecture studio in Bergen working on homes, schools and small civic buildings.</p></div>
-                  <div class="b-img"></div>
-                </div>
-                <div class="b-grid"><i style="background:#DCCBFF"></i><i style="background:#FFD53D"></i><i style="background:#FF5A3C"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="work-text">
-          <h2>Halden Studio</h2>
-          <p>A new website for an architecture practice: identity refresh, a project archive with 60 case studies, and a journal the partners write themselves. Built in Framer so the studio edits everything without us.</p>
-          <ul class="did"><li>Identity refresh and design system</li><li>Framer build with a 60-project archive</li><li>Journal the partners publish themselves</li></ul>
-          <div class="tags"><span>Website</span><span>Web design</span><span>2025</span><span>5 weeks</span></div>
-          <p class="result">Enquiries up 2.4 times in the first quarter, and every page loads in under a second on 4G.</p>
-        </div>
-      </li>
-      <li data-type="web mobile" class="w-lilac" id="pillar-health">
-        <div class="work-frame" role="img" aria-label="Pillar Health patient portal">
-          <div class="desk"><div class="screen t-paper">
-  <div class="d-side"><b>Pillar</b><span class="">Today</span><span class="on">Appointments</span><span class="">Patients</span><span class="">Messages</span><span class="">Settings</span></div>
-  <div class="d-main">
-    <div class="d-head"><b>Appointments</b><i>Book slot</i></div>
-    <div class="d-rows"><div class="d-th"><span>Patient</span><span>Time</span><span>Clinician</span><span>Status</span></div><div><span>Amira Hassan</span><span>09:20</span><span>Dr Adeyemi</span><em class="ok">Checked in</em></div><div><span>Ben Okafor</span><span>09:40</span><span>Nurse Lin</span><em class="">Waiting</em></div><div><span>Chloe Marsh</span><span>10:00</span><span>Dr Adeyemi</span><em class="">Waiting</em></div><div><span>Dev Patel</span><span>10:20</span><span>Nurse Lin</span><em class="warn">Cancelled</em></div><div><span>Elena Rossi</span><span>10:40</span><span>Dr Adeyemi</span><em class="">Booked</em></div></div>
-  </div>
-</div></div>
-        </div>
-        <div class="work-text">
-          <h2>Pillar Health</h2>
-          <p>Patient portal and clinic console for a group of eleven GP practices: booking, repeat prescriptions, secure messages and a check-in flow the reception desk actually uses.</p>
-          <ul class="did"><li>Web portal plus iOS and Android app</li><li>Designed with nurses in the practice, not from a spec</li><li>NHS login and clinical-safety review</li></ul>
-          <div class="tags"><span>Web</span><span>iOS</span><span>Android</span><span>2025</span><span>11 weeks</span></div>
-          <p class="result">Phone calls to reception down 38% in the first two months.</p>
-        </div>
-      </li>
-      <li data-type="saas web" class="w-butter" id="nordwall-films">
-        <div class="work-frame" role="img" aria-label="Nordwall Films scheduling console">
-          <div class="desk"><div class="screen t-paper">
-  <div class="d-side"><b>Nordwall</b><span class="on">Schedule</span><span class="">Productions</span><span class="">Crew</span><span class="">Invoices</span><span class="">Settings</span></div>
-  <div class="d-main">
-    <div class="d-head"><b>Schedule</b><i>Add shoot day</i></div>
-    <div class="d-rows"><div class="d-th"><span>Production</span><span>Dates</span><span>Crew</span><span>Status</span></div><div><span>Northern Light</span><span>3 to 9 Sep</span><span>14</span><em class="ok">Shooting</em></div><div><span>Harbour</span><span>12 to 14 Sep</span><span>6</span><em class="">Prep</em></div><div><span>Still Water</span><span>20 Sep</span><span>9</span><em class="">Prep</em></div><div><span>Kite</span><span>28 Sep to 2 Oct</span><span>18</span><em class="">Holding</em></div><div><span>Ledger (ad)</span><span>6 Oct</span><span>4</span><em class="ok">Confirmed</em></div></div>
-  </div>
-</div></div>
-        </div>
-        <div class="work-text">
-          <h2>Nordwall Films</h2>
-          <p>Production scheduling SaaS for a film company that grew into a product for other studios: crew availability, call sheets, budgets and invoicing in one place.</p>
-          <ul class="did"><li>Multi-tenant SaaS with per-studio billing</li><li>Call sheets generated and sent from the schedule</li><li>Admin for the Nordwall team to onboard studios</li></ul>
-          <div class="tags"><span>SaaS</span><span>Web</span><span>2024</span><span>16 weeks, then monthly team</span></div>
-          <p class="result">Now used by nine production companies; call sheets go out in minutes instead of an evening.</p>
-        </div>
-      </li>
-      <li data-type="website" class="w-coral" id="bright-co">
-        <div class="work-frame" role="img" aria-label="Bright and Co online shop">
-          <div class="browser"><div class="screen t-paper">
-  <div class="b-bar"><i></i><i></i><i></i><span>brightandco.com</span></div>
-  <div class="b-site">
-    <div class="b-nav"><b>Bright &amp; Co</b><span>Shop Journal Studio</span><i>Shop</i></div>
-    <div class="b-hero"><div><h4>Lamps made in Sheffield.</h4><p>Hand-finished lighting, shipped in three days.</p></div><div class="b-img" style="background:#DCCBFF"></div></div>
-    <div class="b-grid"><i style="background:#C8F04A"></i><i style="background:#FFD53D"></i><i style="background:#2B3FFF"></i></div>
-  </div>
-</div></div>
-        </div>
-        <div class="work-text">
-          <h2>Bright &amp; Co</h2>
-          <p>Brand site and online shop for a lighting maker: product photography direction, a Shopify build behind a Next.js front end, and a checkout tuned for a high-value single purchase.</p>
-          <ul class="did"><li>Web design and art direction</li><li>Next.js storefront on Shopify</li><li>Core Web Vitals in the green on every page</li></ul>
-          <div class="tags"><span>Website</span><span>E-commerce</span><span>2025</span><span>7 weeks</span></div>
-          <p class="result">Checkout conversion up from 1.9% to 3.4% in the first month.</p>
-        </div>
-      </li>
-      <li data-type="website web" class="w-lime" id="marlow-interiors">
-        <div class="work-frame" role="img" aria-label="Marlow Interiors website">
-          <div class="browser"><div class="screen t-paper">
-  <div class="b-bar"><i></i><i></i><i></i><span>marlowinteriors.co.uk</span></div>
-  <div class="b-site">
-    <div class="b-nav"><b>Marlow</b><span>Projects Services About</span><i>Enquire</i></div>
-    <div class="b-hero"><div><h4>Rooms that feel finished.</h4><p>Interior design for homes and boutique hotels across the south coast.</p></div><div class="b-img" style="background:#FF5A3C"></div></div>
-    <div class="b-grid"><i style="background:#DCCBFF"></i><i style="background:#2B3FFF"></i><i style="background:#FFD53D"></i></div>
-  </div>
-</div></div>
-        </div>
-        <div class="work-text">
-          <h2>Marlow Interiors</h2>
-          <p>Portfolio site and enquiry flow for an interior design practice, with a private client area where projects, mood boards and invoices live.</p>
-          <ul class="did"><li>Framer site the studio updates weekly</li><li>Client area built in Next.js with magic-link sign-in</li><li>Technical SEO and local search setup</li></ul>
-          <div class="tags"><span>Website</span><span>Web app</span><span>2024</span><span>6 weeks</span></div>
-          <p class="result">Ranks first locally for interior design and enquiries doubled in a quarter.</p>
-        </div>
-      </li>
-    </ul>
+    <article class="article" style="--accent:var(--butter)">
+<p>Launch day is calm. The week after is when the real bugs arrive, because real people do things test users never did. Every fixed-scope project includes thirty days of fixes, and this is what those thirty days usually contain.</p>
+<h2>What actually breaks</h2>
+<ul><li><strong>Data nobody imagined.</strong> A client name with 400 characters. A ride with zero distance. An invoice for a negative amount.</li><li><strong>Old devices.</strong> The phone that's three OS versions behind and belongs to your biggest customer.</li><li><strong>Email.</strong> Password resets in spam, receipts with the wrong timezone, a template that looks fine everywhere except Outlook.</li><li><strong>The thing that worked on staging.</strong> Usually an environment variable.</li></ul>
+<h2>How we run the month</h2>
+<p>Monitoring is on from day one (Sentry for errors, PostHog for behaviour), and the same team that built the product is on call for it. We triage every morning, fix the same day where we can, and ship a summary each Friday.</p>
+<p>By day thirty the error rate has usually flattened, and the conversation shifts from fixes to what's next. That's when most clients move to a monthly team.</p>
+    </article>
+    <nav class="post-nav" aria-label="Adjacent posts"><a href="/blog/fast-marketing-sites"><span>Newer</span><b>Fast marketing sites without a build team</b></a><a href="/blog/seo-good-engineering" class="next"><span>Older</span><b>The SEO work that's just good engineering</b></a></nav>
   </div>
 </section>
 
-<section class="field on-cobalt">
+<section class="field on-paper more" style="padding-top:0">
   <div class="wrap">
-    <div class="section-head">
-      <h2>Across all of it</h2>
-      <p>Numbers from the products above, updated when we ship something new.</p>
+    <h2>More writing</h2>
+    <div class="posts">
+      <a class="post" href="/blog/week-five">
+        <div class="cover" style="background:var(--lime)"><span>Process</span></div>
+        <div class="body">
+          <h3>Why we start engineering in week five</h3>
+          <p>Waiting for every screen to be finished before writing code is how projects slip. Here's how the overlap actually works.</p>
+          <div class="meta"><time datetime="2026-08-12">12 Aug 2026</time><span>1 min read</span></div>
+        </div>
+      </a>
+      <a class="post" href="/blog/handoff-problem">
+        <div class="cover" style="background:var(--lilac)"><span>Design</span></div>
+        <div class="body">
+          <h3>The handoff problem, and how we avoid it</h3>
+          <p>Most products get worse the moment a designer hands over a file. We stopped handing over.</p>
+          <div class="meta"><time datetime="2026-07-28">28 Jul 2026</time><span>1 min read</span></div>
+        </div>
+      </a>
+      <a class="post" href="/blog/react-native-2026">
+        <div class="cover" style="background:var(--butter)"><span>Engineering</span></div>
+        <div class="body">
+          <h3>React Native in 2026: when we still go native</h3>
+          <p>One codebase for both stores is the default. These are the four cases where we don't.</p>
+          <div class="meta"><time datetime="2026-07-09">9 Jul 2026</time><span>1 min read</span></div>
+        </div>
+      </a>
     </div>
-    <div class="stats">
-      <div><b>12</b><span>products shipped since 2019</span></div>
-      <div><b>4.8</b><span>average App Store and Play Store rating</span></div>
-      <div><b>91%</b><span>of clients came back for a second project or a monthly team</span></div>
-      <div><b>&lt;1s</b><span>load time on 4G for every website we've launched</span></div>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="field on-cobalt contact">
-  <div class="wrap contact-grid">
-    <div>
-      <h2>Tell us what you're building.</h2>
-      <p>A few lines about the product, who it's for and when you'd like it live is plenty. A partner reads every message and replies within a business day, usually the same afternoon.</p>
-    </div>
-    <div class="contact-actions">
-      <a class="btn btn-butter btn-lg" href="https://wa.me/917034717069" target="_blank" rel="noopener">Start a project</a>
-      <a class="btn btn-outline" href="https://wa.me/917034717069?text=Hi%20Gevix%2C%20I%27d%20like%20to%20book%20a%2030-minute%20call." target="_blank" rel="noopener">Book a 30-minute call</a>
-    </div>
+    <div class="posts-more"><a class="btn btn-cobalt" href="/blog">All posts</a></div>
   </div>
 </section>
 </main>
@@ -696,7 +529,7 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
     <span class="brand-small">Gevix</span>
     <span>Design and engineering studio, based in India</span>
     <nav aria-label="Footer">
-      <a href="#">Work</a>
+      <a href="/work">Work</a>
       <a href="/#services">Services</a>
       <a href="/#faq">FAQ</a>
       <a href="/blog">Blog</a>
@@ -709,23 +542,6 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
   <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 2.7C8.7 2.7 2.8 8.6 2.8 15.9c0 2.5.7 5 2 7.1L2.7 29.3l6.5-2c2 1.1 4.4 1.7 6.8 1.7 7.3 0 13.2-5.9 13.2-13.2S23.3 2.7 16 2.7zm0 24.1c-2.2 0-4.3-.6-6.1-1.7l-.4-.3-3.9 1.2 1.2-3.8-.3-.4A10.9 10.9 0 0 1 5 15.9C5 9.9 9.9 5 16 5s11 4.9 11 10.9-4.9 10.9-11 10.9zm6-8.2c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.5c-.3-.6-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.6-.4z"/></svg>
   <span>Chat on WhatsApp</span>
 </a>
-
-<script>
-(function(){
-  var buttons=document.querySelectorAll('.filters button'),items=document.querySelectorAll('#workList > li'),count=document.getElementById('count');
-  buttons.forEach(function(b){
-    b.addEventListener('click',function(){
-      var f=b.getAttribute('data-filter'),n=0;
-      buttons.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
-      items.forEach(function(li){
-        var show=f==='all'||(' '+li.getAttribute('data-type')+' ').indexOf(' '+f+' ')>-1;
-        li.hidden=!show; if(show) n++;
-      });
-      count.textContent='Showing '+n+(n===1?' project':' projects');
-    });
-  });
-})();
-</script>
 <script>
 (function(){
   var menu=document.querySelector('.menu');
