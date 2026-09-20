@@ -55,6 +55,7 @@ collections:
       - { label: "What we did", name: bullets, widget: list }
       - { label: "Tags", name: tags, widget: list, hint: "e.g. Web, SaaS, 2025, 14 weeks" }
       - { label: "Result line", name: result, widget: string }
+      - { label: "Link", name: link, widget: string, required: false, hint: "Where clicking this case study should go, e.g. the live client site. Opens in a new tab. Leave blank to make it non-clickable." }
       - { label: "Screenshot", name: image, widget: image, required: false, hint: "Optional. If set, this photo replaces the hand-coded mockup below entirely." }
       - label: "Mockup HTML (advanced)"
         name: mockupHtml
