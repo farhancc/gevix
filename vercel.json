@@ -1,5 +1,6 @@
 {
   "buildCommand": "python3 build.py",
+  "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
