@@ -271,7 +271,8 @@ def work_li(w):
         wrapper = f'        <a class="work-card-link" href="{esc(link)}" target="_blank" rel="noopener">\n{body}        </a>\n'
     else:
         wrapper = f'        <div class="work-card-link">\n{body}        </div>\n'
-    return f'<li data-type="{data_type}" class="w-{w["color"]}" id="{w["slug"]}">\n{wrapper}      </li>'
+    flip = " flip" if w["order"] % 2 == 0 else ""
+    return f'<li data-type="{data_type}" class="w-{w["color"]}{flip}" id="{w["slug"]}">\n{wrapper}      </li>'
 
 
 def home_work_li(w):
@@ -289,7 +290,8 @@ def home_work_li(w):
         wrapper = f'        <a class="work-card-link" href="{esc(link)}" target="_blank" rel="noopener">\n{body}        </a>\n'
     else:
         wrapper = f'        <div class="work-card-link">\n{body}        </div>\n'
-    return f'<li class="w-{w["color"]}">\n{wrapper}      </li>'
+    flip = " flip" if w["order"] % 2 == 0 else ""
+    return f'<li class="w-{w["color"]}{flip}">\n{wrapper}      </li>'
 
 
 def work_ld_json(work_items):

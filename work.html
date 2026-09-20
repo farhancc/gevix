@@ -292,7 +292,7 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 .work li{color:var(--ink);border-radius:var(--r-lg);transition:transform .15s}
 .work li:hover{transform:translateY(-3px)}
 .work-card-link{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,4vw,56px);align-items:center;padding:clamp(20px,3vw,40px);text-decoration:none;color:inherit}
-.work li:nth-child(even) .work-frame{order:2}
+.work li.flip .work-frame{order:2}
 @media (prefers-reduced-motion:reduce){.work li:hover{transform:none}}
 .work-frame{display:flex;justify-content:center;min-width:0;padding:clamp(8px,2vw,24px)}
 .work-frame .phone{width:min(250px,60%);container-type:inline-size;margin:0}
@@ -381,7 +381,7 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 }
 @media (max-width:900px){
   .work-card-link{grid-template-columns:1fr}
-  .work li:nth-child(even) .work-frame{order:0}
+  .work li.flip .work-frame{order:0}
 }
 @media (max-width:820px){
   .section-head{grid-template-columns:1fr}
@@ -515,7 +515,7 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
         </div>
         </div>
       </li>
-<li data-type="mobile" class="w-lime" id="northloop">
+<li data-type="mobile" class="w-lime flip" id="northloop">
         <div class="work-card-link">
         <div class="work-frame" role="img" aria-label="Northloop ride summary screen">
           <figure class="phone" aria-hidden="true">
@@ -596,7 +596,7 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
         </div>
         </div>
       </li>
-<li data-type="website" class="w-butter" id="halden-studio">
+<li data-type="website" class="w-butter flip" id="halden-studio">
         <div class="work-card-link">
         <div class="work-frame" role="img" aria-label="Halden Studio website home page in a browser window">
           <div class="browser" aria-hidden="true">
@@ -622,7 +622,7 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
         </div>
         </div>
       </li>
-<li data-type="saas web" class="w-butter" id="nordwall-films">
+<li data-type="saas web" class="w-butter flip" id="nordwall-films">
         <div class="work-card-link">
         <div class="work-frame" role="img" aria-label="Nordwall Films scheduling console">
           <div class="desk" aria-hidden="true"><div class="screen t-paper">
@@ -663,7 +663,7 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
         </div>
         </div>
       </li>
-<li data-type="website web" class="w-lime" id="marlow-interiors">
+<li data-type="website web" class="w-lime flip" id="marlow-interiors">
         <div class="work-card-link">
         <div class="work-frame" role="img" aria-label="Marlow Interiors website">
           <div class="browser" aria-hidden="true"><div class="screen t-paper">
