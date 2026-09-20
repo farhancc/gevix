@@ -5,7 +5,7 @@
   ],
   "slug": "kiyano-icecream",
   "ariaLabel": "Kiyano",
-  "order": 7,
+  "order": 2,
   "mockupHtml": "          <div class=\"browser\" aria-hidden=\"true\"><div class=\"screen t-paper\">\n  <div class=\"b-bar\"><i></i><i></i><i></i><span>brightandco.com</span></div>\n  <div class=\"b-site\">\n    <div class=\"b-nav\"><b>Bright &amp; Co</b><span>Shop Journal Studio</span><i>Shop</i></div>\n    <div class=\"b-hero\"><div><p class=\"b-h\">Lamps made in Sheffield.</p><p>Hand-finished lighting, shipped in three days.</p></div><div class=\"b-img\" style=\"background:#DCCBFF\"></div></div>\n    <div class=\"b-grid\"><i style=\"background:#C8F04A\"></i><i style=\"background:#FFD53D\"></i><i style=\"background:#2B3FFF\"></i></div>\n  </div>\n</div></div>\n        ",
   "bullets": [
     "Web design and art direction",
