@@ -258,6 +258,7 @@ def work_li(w):
     tags = "".join(f"<span>{t}</span>" for t in w["tags"])
     bullets = "".join(f"<li>{b}</li>" for b in w["bullets"])
     return (f'<li data-type="{data_type}" class="w-{w["color"]}" id="{w["slug"]}">\n'
+            f'        <a class="work-card-link" href="/work/{w["slug"]}">\n'
             f'        <div class="work-frame" role="img" aria-label="{esc(w["ariaLabel"])}">\n'
             f'{work_mockup(w)}\n        </div>\n'
             f'        <div class="work-text">\n'
@@ -266,7 +267,7 @@ def work_li(w):
             f'          <ul class="did">{bullets}</ul>\n'
             f'          <div class="tags">{tags}</div>\n'
             f'          <p class="result">{w["result"]}</p>\n'
-            f'        </div>\n      </li>')
+            f'        </div>\n        </a>\n      </li>')
 
 
 def work_ld_json(work_items):
@@ -274,10 +275,106 @@ def work_ld_json(work_items):
           "url": f"{SITE}/work", "name": "Work by Gevix", "isPartOf": {"@id": f"{SITE}/#website"},
           "mainEntity": {"@type": "ItemList", "itemListElement": [
               {"@type": "ListItem", "position": i + 1,
-               "item": {"@type": "CreativeWork", "name": w["title"], "url": f"{SITE}/work#{w['slug']}",
+               "item": {"@type": "CreativeWork", "name": w["title"], "url": f"{SITE}/work/{w['slug']}",
                         "creator": {"@id": f"{SITE}/#org"}}}
               for i, w in enumerate(work_items)]}}
     return f'<script type="application/ld+json">{json.dumps(ld)}</script>'
+
+
+def work_page(i, w, work_items):
+    url = f"{SITE}/work/{w['slug']}"
+    on = f"on-{w['color']}"
+    title = f"{w['title']} | Gevix"
+    tags = "".join(f"<span>{t}</span>" for t in w["tags"])
+    bullets = "".join(f"<li>{b}</li>" for b in w["bullets"])
+    ld = {"@context": "https://schema.org", "@graph": [
+        {"@type": "CreativeWork", "@id": url + "#work", "name": w["title"], "description": w["description"],
+         "url": url, "mainEntityOfPage": url, "creator": {"@id": f"{SITE}/#org"}, "image": f"{SITE}/og-image.png"},
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Work", "item": SITE + "/work"},
+            {"@type": "ListItem", "position": 3, "name": w["title"], "item": url}]}]}
+    more = "\n".join(
+        f'      <a class="btn btn-outline" href="/work/{q["slug"]}">{q["title"]}</a>'
+        for q in [q for q in work_items if q["slug"] != w["slug"]][:3])
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E1Q7JSZ5PY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E1Q7JSZ5PY');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<title>{esc(title)}</title>
+<meta name="description" content="{esc(w['description'])}">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="{url}">
+<meta property="og:url" content="{url}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gevix">
+<meta property="og:title" content="{esc(w['title'])}">
+<meta property="og:description" content="{esc(w['description'])}">
+<meta property="og:image" content="{SITE}/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{esc(w['title'])}">
+<meta name="twitter:description" content="{esc(w['description'])}">
+<meta name="twitter:image" content="{SITE}/og-image.png">
+<meta name="theme-color" content="#2B3FFF">
+<script type="application/ld+json">{json.dumps(ld)}</script>
+{fonts}
+{head_styles}
+</head>
+<body>
+{header}
+
+<main>
+<section class="work-hero {on}">
+  <div class="wrap">
+    <a href="/work" style="display:inline-block;font-weight:700;font-size:14px;opacity:.75;text-decoration:none;margin-bottom:22px">&larr;&nbsp;Work</a>
+    <h1>{w['title']}</h1>
+    <div class="tags">{tags}</div>
+  </div>
+</section>
+
+<section class="field on-paper">
+  <div class="wrap" style="max-width:900px">
+    <div class="work-frame" role="img" aria-label="{esc(w['ariaLabel'])}" style="padding:0 0 clamp(24px,3vw,40px)">
+{work_mockup(w)}
+    </div>
+    <p>{w['description']}</p>
+    <ul class="did">{bullets}</ul>
+    <p class="result">{w['result']}</p>
+  </div>
+</section>
+
+<section class="field on-paper more" style="padding-top:0">
+  <div class="wrap">
+    <h2>More work</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:20px">
+{more}
+    </div>
+    <div class="posts-more"><a class="btn btn-cobalt" href="/work">All work</a></div>
+  </div>
+</section>
+</main>
+
+{footer}
+
+{wa}
+{script}
+</body>
+</html>
+"""
 
 
 (ROOT / "blog").mkdir(exist_ok=True)
@@ -294,6 +391,10 @@ work_html = inject(work_html, "WORK-LD", work_ld_json(work_items))
 work_html = re.sub(r"Showing \d+ projects", f"Showing {len(work_items)} projects", work_html)
 (ROOT / "work.html").write_text(work_html)
 
+(ROOT / "work").mkdir(exist_ok=True)
+for i, w in enumerate(work_items):
+    (ROOT / "work" / f"{w['slug']}.html").write_text(work_page(i, w, work_items))
+
 index_html = (ROOT / "index.html").read_text()
 index_html = inject(index_html, "HOME-POSTS", "\n".join(card(p) for p in posts[:3]))
 (ROOT / "index.html").write_text(index_html)
@@ -301,6 +402,7 @@ index_html = inject(index_html, "HOME-POSTS", "\n".join(card(p) for p in posts[:
 latest = max(p["date"] for p in posts)
 urls = [(SITE + "/", latest), (SITE + "/work", latest), (SITE + "/blog", latest)]
 urls += [(f"{SITE}/blog/{p['slug']}", p["date"]) for p in posts]
+urls += [(f"{SITE}/work/{w['slug']}", latest) for w in work_items]
 sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
 sm += [f"  <url><loc>{u}</loc><lastmod>{d}</lastmod></url>" for u, d in urls]
 sm.append("</urlset>")
