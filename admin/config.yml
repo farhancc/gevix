@@ -51,10 +51,12 @@ collections:
       - { label: "What we did", name: bullets, widget: list }
       - { label: "Tags", name: tags, widget: list, hint: "e.g. Web, SaaS, 2025, 14 weeks" }
       - { label: "Result line", name: result, widget: string }
+      - { label: "Screenshot", name: image, widget: image, required: false, hint: "Optional. If set, this photo replaces the hand-coded mockup below entirely." }
       - label: "Mockup HTML (advanced)"
         name: mockupHtml
         widget: code
+        required: false
         default_language: html
         allow_language_selection: false
         output_code_only: true
-        hint: "Raw HTML for the bespoke device mockup. Copy an existing case study's mockup as a starting point and edit the text/numbers inside it."
+        hint: "Raw HTML for the bespoke device mockup. Ignored if a screenshot is set above. Copy an existing case study's mockup as a starting point and edit the text/numbers inside it."

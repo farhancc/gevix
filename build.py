@@ -233,13 +233,24 @@ def inject(text, name, new_content):
     return pattern.sub(lambda m: f"{start}\n{new_content}\n{end}", text, count=1)
 
 
+def work_mockup(w):
+    image = w.get("image")
+    if image:
+        frame_style = ("width:100%;aspect-ratio:16/10;border-radius:18px;overflow:hidden;"
+                       "box-shadow:0 30px 60px rgba(18,17,26,.22)")
+        return (f'          <div aria-hidden="true" style="{frame_style}">'
+                f'<img src="{esc(image)}" alt="" style="width:100%;height:100%;object-fit:cover;display:block">'
+                f'</div>')
+    return w.get("mockupHtml", "").rstrip()
+
+
 def work_li(w):
     data_type = " ".join(w["dataType"])
     tags = "".join(f"<span>{t}</span>" for t in w["tags"])
     bullets = "".join(f"<li>{b}</li>" for b in w["bullets"])
     return (f'<li data-type="{data_type}" class="w-{w["color"]}" id="{w["slug"]}">\n'
             f'        <div class="work-frame" role="img" aria-label="{esc(w["ariaLabel"])}">\n'
-            f'{w["mockupHtml"].rstrip()}\n        </div>\n'
+            f'{work_mockup(w)}\n        </div>\n'
             f'        <div class="work-text">\n'
             f'          <h2>{w["title"]}</h2>\n'
             f'          <p>{w["description"]}</p>\n'
