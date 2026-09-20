@@ -64,6 +64,8 @@
   --butter:#FFD53D;
   --lilac:#DCCBFF;
   --violet:#5B2EFF;
+  --teal:#23F6D3;
+  --magenta:#FF3DAE;
   --line:rgba(18,17,26,.14);
   --mock-line:#E9E8E2;
   --display:'Unbounded','Onest',system-ui,sans-serif;
@@ -89,6 +91,8 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 .on-butter{background:var(--butter);color:var(--ink)}
 .on-coral{background:var(--coral);color:var(--ink)}
 .on-lilac{background:var(--lilac);color:var(--ink)}
+.on-teal{background:var(--teal);color:var(--ink)}
+.on-magenta{background:var(--magenta);color:var(--ink)}
 .on-paper{background:var(--bg);color:var(--fg)}
 .muted{opacity:.72}
 
@@ -311,6 +315,8 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 .w-lilac{background:var(--lilac)}
 .w-coral{background:var(--coral)}
 .w-butter{background:var(--butter)}
+.w-teal{background:var(--teal)}
+.w-magenta{background:var(--magenta)}
 
 /* quotes */
 .quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
@@ -556,91 +562,42 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
     </div>
     <ul class="work">
 <!-- BUILD:HOME-WORK:START -->
-<li class="w-lilac">
-        <a class="work-card-link" href="https://olorental.com/" target="_blank" rel="noopener">
-        <div class="work-frame" role="img" aria-label="OLO Rental landing page">
-          <div aria-hidden="true" style="width:100%;aspect-ratio:16/10;border-radius:18px;overflow:hidden;box-shadow:0 30px 60px rgba(18,17,26,.22)"><img src="/assets-src/chatgpt-image-sep-20-2026-09_12_06-am.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+<li class="w-lime">
+        <div class="work-card-link">
+        <div class="work-frame" role="img" aria-label="Marlow Interiors website">
+          <div class="browser" aria-hidden="true"><div class="screen t-paper">
+  <div class="b-bar"><i></i><i></i><i></i><span>marlowinteriors.co.uk</span></div>
+  <div class="b-site">
+    <div class="b-nav"><b>Marlow</b><span>Projects Services About</span><i>Enquire</i></div>
+    <div class="b-hero"><div><p class="b-h">Rooms that feel finished.</p><p>Interior design for homes and boutique hotels across the south coast.</p></div><div class="b-img" style="background:#FF5A3C"></div></div>
+    <div class="b-grid"><i style="background:#DCCBFF"></i><i style="background:#2B3FFF"></i><i style="background:#FFD53D"></i></div>
+  </div>
+</div></div>
         </div>
         <div class="work-text">
-          <h3>OLO Rental</h3>
-          <p>olO rental is a property management app </p>
-          <div class="tags"><span>Web</span><span>2025</span></div>
-          <p class="result">Phone calls to reception down 38% in the first two months.</p>
+          <h3>Marlow Interiors</h3>
+          <p>Portfolio site and enquiry flow for an interior design practice, with a private client area where projects, mood boards and invoices live.</p>
+          <div class="tags"><span>Website</span><span>Web app</span><span>2024</span><span>6 weeks</span></div>
+          <p class="result">Ranks first locally for interior design and enquiries doubled in a quarter.</p>
+        </div>
+        </div>
+      </li>
+<li class="w-coral flip">
+        <a class="work-card-link" href="https://kiyanoicecream.com" target="_blank" rel="noopener">
+        <div class="work-frame" role="img" aria-label="Kiyano">
+          <div aria-hidden="true" style="width:100%;aspect-ratio:16/10;border-radius:18px;overflow:hidden;box-shadow:0 30px 60px rgba(18,17,26,.22)"><img src="/assets-src/kiyano-ice-cream-website-mockup.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        </div>
+        <div class="work-text">
+          <h3>Kiyano Icecream</h3>
+          <p>Kiyano icecream is a new ice cream manufacturing and destribution unit</p>
+          <div class="tags"><span>Website</span><span>2026</span></div>
+          <p class="result">Fast page load (1.5 sec)</p>
         </div>
         </a>
       </li>
 <li class="w-lilac">
-        <div class="work-card-link">
-        <div class="work-frame" role="img" aria-label="Ledgerly invoices screen">
-          <div class="desk" aria-hidden="true">
-            <div class="screen t-paper">
-              <div class="d-side">
-                <b>Ledgerly</b>
-                <span>Overview</span><span class="on">Invoices</span><span>Clients</span><span>Reports</span><span>Settings</span>
-              </div>
-              <div class="d-main">
-                <div class="d-head"><b>Invoices</b><i>New invoice</i></div>
-                <div class="d-chips"><span class="on">All 128</span><span>Sent 41</span><span>Overdue 7</span><span>Paid 80</span></div>
-                <div class="d-rows">
-                  <div class="d-th"><span>Client</span><span>Number</span><span>Amount</span><span>Status</span></div>
-                  <div><span>Halden Studio</span><span>INV-0412</span><span>$12,400</span><em class="ok">Paid</em></div>
-                  <div><span>Bright &amp; Co</span><span>INV-0411</span><span>$8,150</span><em>Sent</em></div>
-                  <div><span>Nordwall Films</span><span>INV-0409</span><span>$21,000</span><em class="warn">Overdue</em></div>
-                  <div><span>Pillar Health</span><span>INV-0408</span><span>$6,650</span><em class="ok">Paid</em></div>
-                  <div><span>Marlow Interiors</span><span>INV-0407</span><span>$4,300</span><em>Sent</em></div>
-                  <div><span>Fen &amp; Field</span><span>INV-0405</span><span>$9,900</span><em class="ok">Paid</em></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="work-text">
-          <h3>Ledgerly</h3>
-          <p>Bookkeeping SaaS for small agencies. We designed and built the product, the Stripe billing system and the accountant portal, then ran the first three months of support alongside the founders.</p>
-          <div class="tags"><span>Web</span><span>SaaS</span><span>2025</span><span>14 weeks</span></div>
-          <p class="result">Customer onboarding cut from forty minutes to six.</p>
-        </div>
-        </div>
-      </li>
-<li class="w-lime flip">
-        <div class="work-card-link">
-        <div class="work-frame" role="img" aria-label="Northloop ride summary screen">
-          <figure class="phone" aria-hidden="true">
-            <div class="screen t-paper">
-              <div class="p-status"><span>9:41</span><i></i></div>
-              <div class="p-map">
-                <svg viewBox="0 0 100 75" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                  <polyline points="10,60 24,44 40,50 52,30 70,36 88,16" fill="none" stroke="#2B3FFF" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"></polyline>
-                  <circle cx="10" cy="60" r="2.6" fill="#12111A"></circle>
-                  <circle cx="88" cy="16" r="2.6" fill="#2B3FFF"></circle>
-                </svg>
-              </div>
-              <div>
-                <div class="p-small">Sunday long ride</div>
-                <div class="p-big">54.1 km</div>
-              </div>
-              <div class="p-grid">
-                <div><span>Time</span><b>2:14:08</b></div>
-                <div><span>Elevation</span><b>812 m</b></div>
-                <div><span>Average</span><b>24.1 km/h</b></div>
-                <div><span>Effort</span><b>High</b></div>
-              </div>
-              <div class="p-btn">Share ride</div>
-              <div class="p-tabs"><i></i><i class="on"></i><i></i><i></i></div>
-            </div>
-          </figure>
-        </div>
-        <div class="work-text">
-          <h3>Northloop</h3>
-          <p>Training app for road cyclists with ride plans, a coach chat and Strava import. One React Native codebase for both stores, with a small Node service for the coaching queue.</p>
-          <div class="tags"><span>iOS</span><span>Android</span><span>2024</span><span>16 weeks</span></div>
-          <p class="result">4.8 stars on both stores and 31,000 installs in the first year.</p>
-        </div>
-        </div>
-      </li>
-<li class="w-coral">
-        <div class="work-card-link">
-        <div class="work-frame" role="img" aria-label="Cartwright dispatch console">
+        <a class="work-card-link" href="https://portal.sedeer.com" target="_blank" rel="noopener">
+        <div class="work-frame" role="img" aria-label="ecommerce portal">
           <div class="desk" aria-hidden="true">
             <div class="screen t-paper">
               <div class="d-side">
@@ -674,12 +631,25 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
           </div>
         </div>
         <div class="work-text">
-          <h3>Cartwright</h3>
-          <p>Dispatch platform for a regional haulage firm: a web console for the office and a driver app with offline proof of delivery. Live positions come from the drivers' phones, not extra hardware.</p>
-          <div class="tags"><span>Web</span><span>iOS</span><span>Android</span><span>2024</span><span>12 weeks, then monthly team</span></div>
-          <p class="result">Replaced three spreadsheets and a WhatsApp group for 140 drivers.</p>
+          <h3>Sedeer</h3>
+          <p>a B2B Ecommerce portal  that uses thier erp(odoo) as backend . </p>
+          <div class="tags"><span>webapps</span></div>
+          <p class="result">Replaced manual order taking , let the customer know available quantity and its slot details beforehand</p>
         </div>
+        </a>
+      </li>
+<li class="w-butter flip">
+        <a class="work-card-link" href="https://petscolony.in/" target="_blank" rel="noopener">
+        <div class="work-frame" role="img" aria-label="petscolony">
+          <div aria-hidden="true" style="width:100%;aspect-ratio:16/10;border-radius:18px;overflow:hidden;box-shadow:0 30px 60px rgba(18,17,26,.22)"><img src="/assets-src/chatgpt-image-sep-20-2026-12_03_48-pm.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
         </div>
+        <div class="work-text">
+          <h3>pets colony</h3>
+          <p>Highly seo optimised  lead genaration web app for pet shop owners,anyone can sell or Buy pets</p>
+          <div class="tags"><span>Website</span><span>Web app</span><span>Web design</span><span>2026</span><span>E-Commerce</span></div>
+          <p class="result">people can sell thier pets online for free</p>
+        </div>
+        </a>
       </li>
 <!-- BUILD:HOME-WORK:END -->
     </ul>

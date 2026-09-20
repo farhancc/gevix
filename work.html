@@ -26,7 +26,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#2B3FFF">
 <!-- BUILD:WORK-LD:START -->
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "@id": "https://gevix.in/work", "url": "https://gevix.in/work", "name": "Work by Gevix", "isPartOf": {"@id": "https://gevix.in/#website"}, "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "CreativeWork", "name": "OLO Rental", "url": "https://olorental.com/", "creator": {"@id": "https://gevix.in/#org"}}}, {"@type": "ListItem", "position": 2, "item": {"@type": "CreativeWork", "name": "Ledgerly", "url": "https://gevix.in/work#ledgerly", "creator": {"@id": "https://gevix.in/#org"}}}, {"@type": "ListItem", "position": 3, "item": {"@type": "CreativeWork", "name": "Northloop", "url": "https://gevix.in/work#northloop", "creator": {"@id": "https://gevix.in/#org"}}}, {"@type": "ListItem", "position": 4, "item": {"@type": "CreativeWork", "name": "Cartwright", "url": "https://gevix.in/work#cartwright", "creator": {"@id": "https://gevix.in/#org"}}}, {"@type": "ListItem", "position": 5, "item": {"@type": "CreativeWork", "name": "Halden Studio", "url": "https://gevix.in/work#halden-studio", "creator": {"@id": "https://gevix.in/#org"}}}, {"@type": "ListItem", "position": 6, "item": {"@type": "CreativeWork", "name": "Nordwall Films", "url": "https://gevix.in/work#nordwall-films", "creator": {"@id": "https://gevix.in/#org"}}}, {"@type": "ListItem", "position": 7, "item": {"@type": "CreativeWork", "name": "Bright &amp; Co", "url": "https://gevix.in/work#bright-co", "creator": {"@id": "https://gevix.in/#org"}}}, {"@type": "ListItem", "position": 8, "item": {"@type": "CreativeWork", "name": "Marlow Interiors", "url": "https://gevix.in/work#marlow-interiors", "creator": {"@id": "https://gevix.in/#org"}}}]}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "@id": "https://gevix.in/work", "url": "https://gevix.in/work", "name": "Work by Gevix", "isPartOf": {"@id": "https://gevix.in/#website"}, "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "CreativeWork", "name": "Marlow Interiors", "url": "https://gevix.in/work#marlow-interiors", "creator": {"@id": "https://gevix.in/#org"}}}, {"@type": "ListItem", "position": 2, "item": {"@type": "CreativeWork", "name": "Kiyano Icecream", "url": "https://kiyanoicecream.com", "creator": {"@id": "https://gevix.in/#org"}}}, {"@type": "ListItem", "position": 3, "item": {"@type": "CreativeWork", "name": "Sedeer", "url": "https://portal.sedeer.com", "creator": {"@id": "https://gevix.in/#org"}}}, {"@type": "ListItem", "position": 4, "item": {"@type": "CreativeWork", "name": "pets colony", "url": "https://petscolony.in/", "creator": {"@id": "https://gevix.in/#org"}}}, {"@type": "ListItem", "position": 5, "item": {"@type": "CreativeWork", "name": "OLO Rental", "url": "https://olorental.com/", "creator": {"@id": "https://gevix.in/#org"}}}]}}</script>
 <!-- BUILD:WORK-LD:END -->
 <link rel="preload" href="/fonts/unbounded-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/onest-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -59,6 +59,8 @@
   --butter:#FFD53D;
   --lilac:#DCCBFF;
   --violet:#5B2EFF;
+  --teal:#23F6D3;
+  --magenta:#FF3DAE;
   --line:rgba(18,17,26,.14);
   --mock-line:#E9E8E2;
   --display:'Unbounded','Onest',system-ui,sans-serif;
@@ -84,6 +86,8 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 .on-butter{background:var(--butter);color:var(--ink)}
 .on-coral{background:var(--coral);color:var(--ink)}
 .on-lilac{background:var(--lilac);color:var(--ink)}
+.on-teal{background:var(--teal);color:var(--ink)}
+.on-magenta{background:var(--magenta);color:var(--ink)}
 .on-paper{background:var(--bg);color:var(--fg)}
 .muted{opacity:.72}
 
@@ -306,6 +310,8 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 .w-lilac{background:var(--lilac)}
 .w-coral{background:var(--coral)}
 .w-butter{background:var(--butter)}
+.w-teal{background:var(--teal)}
+.w-magenta{background:var(--magenta)}
 
 /* process */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,40px)}
@@ -464,97 +470,47 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 
 <section class="field on-paper">
   <div class="wrap">
-    <p class="count" id="count" aria-live="polite">Showing 8 projects</p>
+    <p class="count" id="count" aria-live="polite">Showing 5 projects</p>
     <ul class="work" id="workList">
 <!-- BUILD:WORK:START -->
-<li data-type="website" class="w-lilac" id="olorental">
-        <a class="work-card-link" href="https://olorental.com/" target="_blank" rel="noopener">
-        <div class="work-frame" role="img" aria-label="OLO Rental landing page">
-          <div aria-hidden="true" style="width:100%;aspect-ratio:16/10;border-radius:18px;overflow:hidden;box-shadow:0 30px 60px rgba(18,17,26,.22)"><img src="/assets-src/chatgpt-image-sep-20-2026-09_12_06-am.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+<li data-type="website web" class="w-lime" id="marlow-interiors">
+        <div class="work-card-link">
+        <div class="work-frame" role="img" aria-label="Marlow Interiors website">
+          <div class="browser" aria-hidden="true"><div class="screen t-paper">
+  <div class="b-bar"><i></i><i></i><i></i><span>marlowinteriors.co.uk</span></div>
+  <div class="b-site">
+    <div class="b-nav"><b>Marlow</b><span>Projects Services About</span><i>Enquire</i></div>
+    <div class="b-hero"><div><p class="b-h">Rooms that feel finished.</p><p>Interior design for homes and boutique hotels across the south coast.</p></div><div class="b-img" style="background:#FF5A3C"></div></div>
+    <div class="b-grid"><i style="background:#DCCBFF"></i><i style="background:#2B3FFF"></i><i style="background:#FFD53D"></i></div>
+  </div>
+</div></div>
         </div>
         <div class="work-text">
-          <h2>OLO Rental</h2>
-          <p>olO rental is a property management app </p>
-          <ul class="did"><li>We Designed and developed a moibile responsive landingpage for thier mobile application</li></ul>
-          <div class="tags"><span>Web</span><span>2025</span></div>
-          <p class="result">Phone calls to reception down 38% in the first two months.</p>
+          <h2>Marlow Interiors</h2>
+          <p>Portfolio site and enquiry flow for an interior design practice, with a private client area where projects, mood boards and invoices live.</p>
+          <ul class="did"><li>Framer site the studio updates weekly</li><li>Client area built in Next.js with magic-link sign-in</li><li>Technical SEO and local search setup</li></ul>
+          <div class="tags"><span>Website</span><span>Web app</span><span>2024</span><span>6 weeks</span></div>
+          <p class="result">Ranks first locally for interior design and enquiries doubled in a quarter.</p>
+        </div>
+        </div>
+      </li>
+<li data-type="website" class="w-coral flip" id="kiyano-icecream">
+        <a class="work-card-link" href="https://kiyanoicecream.com" target="_blank" rel="noopener">
+        <div class="work-frame" role="img" aria-label="Kiyano">
+          <div aria-hidden="true" style="width:100%;aspect-ratio:16/10;border-radius:18px;overflow:hidden;box-shadow:0 30px 60px rgba(18,17,26,.22)"><img src="/assets-src/kiyano-ice-cream-website-mockup.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        </div>
+        <div class="work-text">
+          <h2>Kiyano Icecream</h2>
+          <p>Kiyano icecream is a new ice cream manufacturing and destribution unit</p>
+          <ul class="did"><li>Web design and art direction</li><li>Next.js storefront Core Web Vitals in the green on every page.</li><li>created business email</li></ul>
+          <div class="tags"><span>Website</span><span>2026</span></div>
+          <p class="result">Fast page load (1.5 sec)</p>
         </div>
         </a>
       </li>
-<li data-type="web saas" class="w-lilac" id="ledgerly">
-        <div class="work-card-link">
-        <div class="work-frame" role="img" aria-label="Ledgerly invoices screen">
-          <div class="desk" aria-hidden="true">
-            <div class="screen t-paper">
-              <div class="d-side">
-                <b>Ledgerly</b>
-                <span>Overview</span><span class="on">Invoices</span><span>Clients</span><span>Reports</span><span>Settings</span>
-              </div>
-              <div class="d-main">
-                <div class="d-head"><b>Invoices</b><i>New invoice</i></div>
-                <div class="d-chips"><span class="on">All 128</span><span>Sent 41</span><span>Overdue 7</span><span>Paid 80</span></div>
-                <div class="d-rows">
-                  <div class="d-th"><span>Client</span><span>Number</span><span>Amount</span><span>Status</span></div>
-                  <div><span>Halden Studio</span><span>INV-0412</span><span>$12,400</span><em class="ok">Paid</em></div>
-                  <div><span>Bright &amp; Co</span><span>INV-0411</span><span>$8,150</span><em>Sent</em></div>
-                  <div><span>Nordwall Films</span><span>INV-0409</span><span>$21,000</span><em class="warn">Overdue</em></div>
-                  <div><span>Pillar Health</span><span>INV-0408</span><span>$6,650</span><em class="ok">Paid</em></div>
-                  <div><span>Marlow Interiors</span><span>INV-0407</span><span>$4,300</span><em>Sent</em></div>
-                  <div><span>Fen &amp; Field</span><span>INV-0405</span><span>$9,900</span><em class="ok">Paid</em></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="work-text">
-          <h2>Ledgerly</h2>
-          <p>Bookkeeping SaaS for small agencies. We designed and built the product, the Stripe billing system and the accountant portal, then ran the first three months of support alongside the founders.</p>
-          <ul class="did"><li>Product design, billing and accountant portal</li><li>Stripe subscriptions with proration and invoicing</li><li>Three months of support alongside the founders</li></ul>
-          <div class="tags"><span>Web</span><span>SaaS</span><span>2025</span><span>14 weeks</span></div>
-          <p class="result">Customer onboarding cut from forty minutes to six.</p>
-        </div>
-        </div>
-      </li>
-<li data-type="mobile" class="w-lime flip" id="northloop">
-        <div class="work-card-link">
-        <div class="work-frame" role="img" aria-label="Northloop ride summary screen">
-          <figure class="phone" aria-hidden="true">
-            <div class="screen t-paper">
-              <div class="p-status"><span>9:41</span><i></i></div>
-              <div class="p-map">
-                <svg viewBox="0 0 100 75" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                  <polyline points="10,60 24,44 40,50 52,30 70,36 88,16" fill="none" stroke="#2B3FFF" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"></polyline>
-                  <circle cx="10" cy="60" r="2.6" fill="#12111A"></circle>
-                  <circle cx="88" cy="16" r="2.6" fill="#2B3FFF"></circle>
-                </svg>
-              </div>
-              <div>
-                <div class="p-small">Sunday long ride</div>
-                <div class="p-big">54.1 km</div>
-              </div>
-              <div class="p-grid">
-                <div><span>Time</span><b>2:14:08</b></div>
-                <div><span>Elevation</span><b>812 m</b></div>
-                <div><span>Average</span><b>24.1 km/h</b></div>
-                <div><span>Effort</span><b>High</b></div>
-              </div>
-              <div class="p-btn">Share ride</div>
-              <div class="p-tabs"><i></i><i class="on"></i><i></i><i></i></div>
-            </div>
-          </figure>
-        </div>
-        <div class="work-text">
-          <h2>Northloop</h2>
-          <p>Training app for road cyclists with ride plans, a coach chat and Strava import. One React Native codebase for both stores, with a small Node service for the coaching queue.</p>
-          <ul class="did"><li>React Native app for iOS and Android</li><li>Strava import and a coach chat with a queue</li><li>Store submission and first-year updates</li></ul>
-          <div class="tags"><span>iOS</span><span>Android</span><span>2024</span><span>16 weeks</span></div>
-          <p class="result">4.8 stars on both stores and 31,000 installs in the first year.</p>
-        </div>
-        </div>
-      </li>
-<li data-type="web mobile" class="w-coral" id="cartwright">
-        <div class="work-card-link">
-        <div class="work-frame" role="img" aria-label="Cartwright dispatch console">
+<li data-type="web" class="w-lilac" id="sedeer">
+        <a class="work-card-link" href="https://portal.sedeer.com" target="_blank" rel="noopener">
+        <div class="work-frame" role="img" aria-label="ecommerce portal">
           <div class="desk" aria-hidden="true">
             <div class="screen t-paper">
               <div class="d-side">
@@ -588,101 +544,41 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
           </div>
         </div>
         <div class="work-text">
-          <h2>Cartwright</h2>
-          <p>Dispatch platform for a regional haulage firm: a web console for the office and a driver app with offline proof of delivery. Live positions come from the drivers' phones, not extra hardware.</p>
+          <h2>Sedeer</h2>
+          <p>a B2B Ecommerce portal  that uses thier erp(odoo) as backend . </p>
           <ul class="did"><li>Dispatch console for the office</li><li>Driver app with offline proof of delivery</li><li>Live positions from phones, no hardware</li></ul>
-          <div class="tags"><span>Web</span><span>iOS</span><span>Android</span><span>2024</span><span>12 weeks, then monthly team</span></div>
-          <p class="result">Replaced three spreadsheets and a WhatsApp group for 140 drivers.</p>
+          <div class="tags"><span>webapps</span></div>
+          <p class="result">Replaced manual order taking , let the customer know available quantity and its slot details beforehand</p>
         </div>
-        </div>
+        </a>
       </li>
-<li data-type="website" class="w-butter flip" id="halden-studio">
-        <div class="work-card-link">
-        <div class="work-frame" role="img" aria-label="Halden Studio website home page in a browser window">
-          <div class="browser" aria-hidden="true">
-            <div class="screen t-paper">
-              <div class="b-bar"><i></i><i></i><i></i><span>haldenstudio.com</span></div>
-              <div class="b-site">
-                <div class="b-nav"><b>Halden</b><span>Projects Studio Journal</span><i>Enquire</i></div>
-                <div class="b-hero">
-                  <div><p class="b-h">Buildings that age well.</p><p>An architecture studio in Bergen working on homes, schools and small civic buildings.</p></div>
-                  <div class="b-img"></div>
-                </div>
-                <div class="b-grid"><i style="background:#DCCBFF"></i><i style="background:#FFD53D"></i><i style="background:#FF5A3C"></i></div>
-              </div>
-            </div>
-          </div>
+<li data-type="website web" class="w-butter flip" id="pets-colony">
+        <a class="work-card-link" href="https://petscolony.in/" target="_blank" rel="noopener">
+        <div class="work-frame" role="img" aria-label="petscolony">
+          <div aria-hidden="true" style="width:100%;aspect-ratio:16/10;border-radius:18px;overflow:hidden;box-shadow:0 30px 60px rgba(18,17,26,.22)"><img src="/assets-src/chatgpt-image-sep-20-2026-12_03_48-pm.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
         </div>
         <div class="work-text">
-          <h2>Halden Studio</h2>
-          <p>A new website for an architecture practice: identity refresh, a project archive with 60 case studies, and a journal the partners write themselves. Built in Framer so the studio edits everything without us.</p>
+          <h2>pets colony</h2>
+          <p>Highly seo optimised  lead genaration web app for pet shop owners,anyone can sell or Buy pets</p>
           <ul class="did"><li>Identity refresh and design system</li><li>Framer build with a 60-project archive</li><li>Journal the partners publish themselves</li></ul>
-          <div class="tags"><span>Website</span><span>Web design</span><span>2025</span><span>5 weeks</span></div>
-          <p class="result">Enquiries up 2.4 times in the first quarter, and every page loads in under a second on 4G.</p>
+          <div class="tags"><span>Website</span><span>Web app</span><span>Web design</span><span>2026</span><span>E-Commerce</span></div>
+          <p class="result">people can sell thier pets online for free</p>
         </div>
-        </div>
+        </a>
       </li>
-<li data-type="saas web" class="w-butter flip" id="nordwall-films">
-        <div class="work-card-link">
-        <div class="work-frame" role="img" aria-label="Nordwall Films scheduling console">
-          <div class="desk" aria-hidden="true"><div class="screen t-paper">
-  <div class="d-side"><b>Nordwall</b><span class="on">Schedule</span><span class="">Productions</span><span class="">Crew</span><span class="">Invoices</span><span class="">Settings</span></div>
-  <div class="d-main">
-    <div class="d-head"><b>Schedule</b><i>Add shoot day</i></div>
-    <div class="d-rows"><div class="d-th"><span>Production</span><span>Dates</span><span>Crew</span><span>Status</span></div><div><span>Northern Light</span><span>3 to 9 Sep</span><span>14</span><em class="ok">Shooting</em></div><div><span>Harbour</span><span>12 to 14 Sep</span><span>6</span><em class="">Prep</em></div><div><span>Still Water</span><span>20 Sep</span><span>9</span><em class="">Prep</em></div><div><span>Kite</span><span>28 Sep to 2 Oct</span><span>18</span><em class="">Holding</em></div><div><span>Ledger (ad)</span><span>6 Oct</span><span>4</span><em class="ok">Confirmed</em></div></div>
-  </div>
-</div></div>
+<li data-type="website" class="w-lilac" id="olorental">
+        <a class="work-card-link" href="https://olorental.com/" target="_blank" rel="noopener">
+        <div class="work-frame" role="img" aria-label="OLO Rental landing page">
+          <div aria-hidden="true" style="width:100%;aspect-ratio:16/10;border-radius:18px;overflow:hidden;box-shadow:0 30px 60px rgba(18,17,26,.22)"><img src="/assets-src/chatgpt-image-sep-20-2026-09_12_06-am.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block"></div>
         </div>
         <div class="work-text">
-          <h2>Nordwall Films</h2>
-          <p>Production scheduling SaaS for a film company that grew into a product for other studios: crew availability, call sheets, budgets and invoicing in one place.</p>
-          <ul class="did"><li>Multi-tenant SaaS with per-studio billing</li><li>Call sheets generated and sent from the schedule</li><li>Admin for the Nordwall team to onboard studios</li></ul>
-          <div class="tags"><span>SaaS</span><span>Web</span><span>2024</span><span>16 weeks, then monthly team</span></div>
-          <p class="result">Now used by nine production companies; call sheets go out in minutes instead of an evening.</p>
+          <h2>OLO Rental</h2>
+          <p>olO rental is a property management app </p>
+          <ul class="did"><li>We Designed and developed a moibile responsive landingpage for thier mobile application</li></ul>
+          <div class="tags"><span>Web</span><span>2025</span></div>
+          <p class="result">Phone calls to reception down 38% in the first two months.</p>
         </div>
-        </div>
-      </li>
-<li data-type="website" class="w-coral" id="bright-co">
-        <div class="work-card-link">
-        <div class="work-frame" role="img" aria-label="Bright and Co online shop">
-          <div class="browser" aria-hidden="true"><div class="screen t-paper">
-  <div class="b-bar"><i></i><i></i><i></i><span>brightandco.com</span></div>
-  <div class="b-site">
-    <div class="b-nav"><b>Bright &amp; Co</b><span>Shop Journal Studio</span><i>Shop</i></div>
-    <div class="b-hero"><div><p class="b-h">Lamps made in Sheffield.</p><p>Hand-finished lighting, shipped in three days.</p></div><div class="b-img" style="background:#DCCBFF"></div></div>
-    <div class="b-grid"><i style="background:#C8F04A"></i><i style="background:#FFD53D"></i><i style="background:#2B3FFF"></i></div>
-  </div>
-</div></div>
-        </div>
-        <div class="work-text">
-          <h2>Bright &amp; Co</h2>
-          <p>Brand site and online shop for a lighting maker: product photography direction, a Shopify build behind a Next.js front end, and a checkout tuned for a high-value single purchase.</p>
-          <ul class="did"><li>Web design and art direction</li><li>Next.js storefront on Shopify</li><li>Core Web Vitals in the green on every page</li></ul>
-          <div class="tags"><span>Website</span><span>E-commerce</span><span>2025</span><span>7 weeks</span></div>
-          <p class="result">Checkout conversion up from 1.9% to 3.4% in the first month.</p>
-        </div>
-        </div>
-      </li>
-<li data-type="website web" class="w-lime flip" id="marlow-interiors">
-        <div class="work-card-link">
-        <div class="work-frame" role="img" aria-label="Marlow Interiors website">
-          <div class="browser" aria-hidden="true"><div class="screen t-paper">
-  <div class="b-bar"><i></i><i></i><i></i><span>marlowinteriors.co.uk</span></div>
-  <div class="b-site">
-    <div class="b-nav"><b>Marlow</b><span>Projects Services About</span><i>Enquire</i></div>
-    <div class="b-hero"><div><p class="b-h">Rooms that feel finished.</p><p>Interior design for homes and boutique hotels across the south coast.</p></div><div class="b-img" style="background:#FF5A3C"></div></div>
-    <div class="b-grid"><i style="background:#DCCBFF"></i><i style="background:#2B3FFF"></i><i style="background:#FFD53D"></i></div>
-  </div>
-</div></div>
-        </div>
-        <div class="work-text">
-          <h2>Marlow Interiors</h2>
-          <p>Portfolio site and enquiry flow for an interior design practice, with a private client area where projects, mood boards and invoices live.</p>
-          <ul class="did"><li>Framer site the studio updates weekly</li><li>Client area built in Next.js with magic-link sign-in</li><li>Technical SEO and local search setup</li></ul>
-          <div class="tags"><span>Website</span><span>Web app</span><span>2024</span><span>6 weeks</span></div>
-          <p class="result">Ranks first locally for interior design and enquiries doubled in a quarter.</p>
-        </div>
-        </div>
+        </a>
       </li>
 <!-- BUILD:WORK:END -->
     </ul>

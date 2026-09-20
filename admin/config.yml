@@ -26,13 +26,13 @@ collections:
       - { label: "Excerpt", name: ex, widget: text, hint: "Shown on cards and used as the meta description." }
       - { label: "Date", name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
       - { label: "Category", name: cat, widget: select, options: ["Process", "Design", "Engineering", "SaaS", "Websites", "SEO"] }
-      - { label: "Accent color", name: color, widget: select, options: ["cobalt", "lime", "lilac", "butter", "coral"], hint: "Used as the cover background, and behind the cover image (if any) while it loads." }
+      - { label: "Accent color", name: color, widget: select, options: ["cobalt", "lime", "lilac", "butter", "coral", "teal", "magenta"], hint: "Used as the cover background, and behind the cover image (if any) while it loads." }
       - { label: "Cover image", name: coverImage, widget: image, required: false, hint: "Optional. Leave blank to use a plain color cover instead." }
       - { label: "Body", name: body, widget: markdown, buttons: ["bold", "quote", "bulleted-list", "code"], editor_components: [] }
       - { label: "Author name", name: authorName, widget: string }
       - { label: "Author role", name: authorRole, widget: string }
       - { label: "Author initials", name: authorInit, widget: string }
-      - { label: "Author color", name: authorColor, widget: select, options: ["cobalt", "lime", "lilac", "butter", "coral"] }
+      - { label: "Author color", name: authorColor, widget: select, options: ["cobalt", "lime", "lilac", "butter", "coral", "teal", "magenta"] }
 
   - name: work
     label: "Case studies"
@@ -49,7 +49,7 @@ collections:
       - { label: "Slug / anchor id", name: slug, widget: string, hint: "URL will be /work#<slug>." }
       - { label: "Order", name: order, widget: number, value_type: int, hint: "Lower numbers appear first." }
       - { label: "Types", name: dataType, widget: select, multiple: true, options: ["web", "mobile", "desktop", "saas", "website"] }
-      - { label: "Accent color", name: color, widget: select, options: ["lilac", "lime", "coral", "butter"] }
+      - { label: "Accent color", name: color, widget: select, options: ["lilac", "lime", "coral", "butter", "teal", "magenta"] }
       - { label: "Mockup alt text", name: ariaLabel, widget: string, hint: "Screen-reader description of the mockup below." }
       - { label: "Description", name: description, widget: text }
       - { label: "What we did", name: bullets, widget: list }

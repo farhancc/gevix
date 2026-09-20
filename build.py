@@ -242,6 +242,13 @@ def inject(text, name, new_content):
     return pattern.sub(lambda m: f"{start}\n{new_content}\n{end}", text, count=1)
 
 
+def work_link(w):
+    link = w.get("link")
+    if link and not re.match(r"^[a-zA-Z][a-zA-Z0-9+.-]*:", link):
+        link = f"https://{link}"
+    return link
+
+
 def work_mockup(w):
     image = w.get("image")
     if image:
@@ -266,7 +273,7 @@ def work_li(w):
             f'          <div class="tags">{tags}</div>\n'
             f'          <p class="result">{w["result"]}</p>\n'
             f'        </div>\n')
-    link = w.get("link")
+    link = work_link(w)
     if link:
         wrapper = f'        <a class="work-card-link" href="{esc(link)}" target="_blank" rel="noopener">\n{body}        </a>\n'
     else:
@@ -285,7 +292,7 @@ def home_work_li(w):
             f'          <div class="tags">{tags}</div>\n'
             f'          <p class="result">{w["result"]}</p>\n'
             f'        </div>\n')
-    link = w.get("link")
+    link = work_link(w)
     if link:
         wrapper = f'        <a class="work-card-link" href="{esc(link)}" target="_blank" rel="noopener">\n{body}        </a>\n'
     else:
@@ -300,7 +307,7 @@ def work_ld_json(work_items):
           "mainEntity": {"@type": "ItemList", "itemListElement": [
               {"@type": "ListItem", "position": i + 1,
                "item": {"@type": "CreativeWork", "name": w["title"],
-                        "url": w.get("link") or f"{SITE}/work#{w['slug']}",
+                        "url": work_link(w) or f"{SITE}/work#{w['slug']}",
                         "creator": {"@id": f"{SITE}/#org"}}}
               for i, w in enumerate(work_items)]}}
     return f'<script type="application/ld+json">{json.dumps(ld)}</script>'
