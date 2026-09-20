@@ -82,14 +82,14 @@ def cover(p):
 
 
 def card(p):
-    return (f'      <a class="post" href="/blog/{p["slug"]}">\n        {cover(p)}\n        <div class="body">\n'
+    return (f'      <a class="post" href="/blog/{p["slug"]}" data-cat="{p["cat"].lower()}">\n        {cover(p)}\n        <div class="body">\n'
             f'          <h3>{p["title"]}</h3>\n          <p>{p["ex"]}</p>\n'
             f'          <div class="meta"><time datetime="{p["date"]}">{display_date(p["date"])}</time><span>{read_time(md_to_html(p["body"]))}</span></div>\n'
             f'        </div>\n      </a>')
 
 
 def featured(p):
-    return (f'    <a class="featured" href="/blog/{p["slug"]}">\n      {cover(p)}\n      <div class="body">\n'
+    return (f'    <a class="featured" href="/blog/{p["slug"]}" data-cat="{p["cat"].lower()}">\n      {cover(p)}\n      <div class="body">\n'
             f'        <h2>{p["title"]}</h2>\n        <p>{p["ex"]}</p>\n'
             f'        <div class="meta"><time datetime="{p["date"]}">{display_date(p["date"])}</time><span>{read_time(md_to_html(p["body"]))}</span><span>{p["authorName"]}</span></div>\n'
             f'      </div>\n    </a>')
