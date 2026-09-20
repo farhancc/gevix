@@ -15,6 +15,8 @@ collections:
     folder: "content/posts"
     create: true
     delete: true
+    extension: json
+    format: json
     slug: "{{fields.slug}}"
     identifier_field: title
     sortable_fields: ["date", "title"]
@@ -37,6 +39,8 @@ collections:
     folder: "content/work"
     create: true
     delete: true
+    extension: json
+    format: json
     slug: "{{fields.slug}}"
     identifier_field: title
     sortable_fields: ["order", "title"]
