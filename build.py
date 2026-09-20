@@ -144,6 +144,14 @@ def article_page(i, p):
     nav += (f'<a href="/blog/{nxt["slug"]}" class="next"><span>Older</span><b>{nxt["title"]}</b></a>' if nxt else "<span></span>")
     nav += "</nav>"
     more = "\n".join(card(q) for q in [q for q in posts if q["slug"] != p["slug"]][:3])
+    cover_image_html = ""
+    cover_section_style = ""
+    if p.get("coverImage"):
+        cover_image_html = (f'<div class="wrap" style="margin-top:32px">\n'
+                            f'  <img src="{esc(p["coverImage"])}" alt="" style="width:100%;max-height:440px;'
+                            f'object-fit:cover;border-radius:18px;box-shadow:0 30px 60px rgba(18,17,26,.16);display:block">\n'
+                            f'</div>')
+        cover_section_style = ' style="padding-top:40px"'
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -198,7 +206,8 @@ def article_page(i, p):
   </div>
 </section>
 
-<section class="field on-paper">
+{cover_image_html}
+<section class="field on-paper"{cover_section_style}>
   <div class="wrap">
     <article class="article" style="--accent:var(--{p['color']})">
 {body_html}
