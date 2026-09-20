@@ -24,7 +24,8 @@ collections:
       - { label: "Excerpt", name: ex, widget: text, hint: "Shown on cards and used as the meta description." }
       - { label: "Date", name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
       - { label: "Category", name: cat, widget: select, options: ["Process", "Design", "Engineering", "SaaS", "Websites", "SEO"] }
-      - { label: "Accent color", name: color, widget: select, options: ["cobalt", "lime", "lilac", "butter", "coral"] }
+      - { label: "Accent color", name: color, widget: select, options: ["cobalt", "lime", "lilac", "butter", "coral"], hint: "Used as the cover background, and behind the cover image (if any) while it loads." }
+      - { label: "Cover image", name: coverImage, widget: image, required: false, hint: "Optional. Leave blank to use a plain color cover instead." }
       - { label: "Body", name: body, widget: markdown, buttons: ["bold", "quote", "bulleted-list", "code"], editor_components: [] }
       - { label: "Author name", name: authorName, widget: string }
       - { label: "Author role", name: authorRole, widget: string }

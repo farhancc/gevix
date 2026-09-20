@@ -70,6 +70,11 @@ def read_time(body_html):
 
 
 def cover(p):
+    image = p.get("coverImage")
+    if image:
+        style = f"background:var(--{p['color']}) url('{esc(image)}') center/cover no-repeat;color:#fff"
+        return (f'<div class="cover" style="{style}">'
+                f'<span style="background:rgba(18,17,26,.55)">{p["cat"]}</span></div>')
     if p["color"] == "cobalt":
         return (f'<div class="cover" style="background:var(--cobalt);color:#fff">'
                 f'<span style="background:rgba(18,17,26,.3)">{p["cat"]}</span></div>')
