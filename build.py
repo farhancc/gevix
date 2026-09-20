@@ -274,6 +274,24 @@ def work_li(w):
     return f'<li data-type="{data_type}" class="w-{w["color"]}" id="{w["slug"]}">\n{wrapper}      </li>'
 
 
+def home_work_li(w):
+    tags = "".join(f"<span>{t}</span>" for t in w["tags"])
+    body = (f'        <div class="work-frame" role="img" aria-label="{esc(w["ariaLabel"])}">\n'
+            f'{work_mockup(w)}\n        </div>\n'
+            f'        <div class="work-text">\n'
+            f'          <h3>{w["title"]}</h3>\n'
+            f'          <p>{w["description"]}</p>\n'
+            f'          <div class="tags">{tags}</div>\n'
+            f'          <p class="result">{w["result"]}</p>\n'
+            f'        </div>\n')
+    link = w.get("link")
+    if link:
+        wrapper = f'        <a class="work-card-link" href="{esc(link)}" target="_blank" rel="noopener">\n{body}        </a>\n'
+    else:
+        wrapper = f'        <div class="work-card-link">\n{body}        </div>\n'
+    return f'<li class="w-{w["color"]}">\n{wrapper}      </li>'
+
+
 def work_ld_json(work_items):
     ld = {"@context": "https://schema.org", "@type": "CollectionPage", "@id": f"{SITE}/work",
           "url": f"{SITE}/work", "name": "Work by Gevix", "isPartOf": {"@id": f"{SITE}/#website"},
@@ -302,6 +320,7 @@ work_html = re.sub(r"Showing \d+ projects", f"Showing {len(work_items)} projects
 
 index_html = (ROOT / "index.html").read_text()
 index_html = inject(index_html, "HOME-POSTS", "\n".join(card(p) for p in posts[:3]))
+index_html = inject(index_html, "HOME-WORK", "\n".join(home_work_li(w) for w in work_items[:4]))
 (ROOT / "index.html").write_text(index_html)
 
 latest = max(p["date"] for p in posts)
