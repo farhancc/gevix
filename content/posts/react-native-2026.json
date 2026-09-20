@@ -1,0 +1,13 @@
+{
+  "title": "React Native in 2026: when we still go native",
+  "slug": "react-native-2026",
+  "ex": "One codebase for both stores is the default. These are the four cases where we don't.",
+  "date": "2026-07-09",
+  "cat": "Engineering",
+  "color": "butter",
+  "body": "Most mobile apps we build are React Native. One codebase, both stores, a team that can move between web and mobile. In 2026 the framework is mature enough that \"is it good enough?\" isn't really a question any more.\n\nBut we still go native, in Swift and Kotlin, for a minority of projects. Here are the cases.\n\n## When we go native\n\n- **Hardware is the product.** Bluetooth peripherals, camera pipelines, background sensor logging. The bridges exist, but you end up writing native code anyway, so start there.\n- **Platform features on day one.** Widgets, Live Activities, App Clips, watch apps. React Native gets these eventually; native gets them at launch.\n- **Heavy animation and gesture work.** Reanimated is excellent. A physics-driven, interruptible interaction is still easier to get right natively.\n- **An existing native team.** If your engineers write Swift, we write Swift.\n\n## When we don't\n\nEverything else: forms, lists, maps, payments, chat, dashboards. Northloop is a good example. Ride tracking, Strava import, coach chat and a training plan, all from one codebase, with both stores updated on the same afternoon.\n\n> The question isn't \"which is better\". It's \"what does this app spend its time doing\".",
+  "authorName": "Jonas Weber",
+  "authorRole": "Mobile engineer",
+  "authorInit": "JW",
+  "authorColor": "butter"
+}

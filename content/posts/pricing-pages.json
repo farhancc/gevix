@@ -1,0 +1,13 @@
+{
+  "title": "Pricing pages are product design",
+  "slug": "pricing-pages",
+  "ex": "The upgrade flow is the most-read screen you'll ever ship. Treat it like one.",
+  "date": "2026-06-21",
+  "cat": "SaaS",
+  "color": "coral",
+  "body": "Ask a SaaS founder to list their product's screens and the pricing page rarely makes the list. It's marketing, it lives on the website, someone will sort it out before launch.\n\nIt's also the most-read screen you'll ship. Every prospect reads it, most of them twice, and it's where they decide whether the product is for them.\n\n## Design it like a product screen\n\n- **Name plans by who they're for**, not by adjectives. \"For a team of five\" beats \"Pro\".\n- **Show the one number that drives cost.** Seats, projects, invoices. If your pricing has three variables, your prospect has a spreadsheet open.\n- **Put the upgrade path in the app.** The moment someone hits a limit is the moment they'll pay. A dead-end error is a lost upgrade.\n- **Test it with real users.** We put the pricing page in front of five people in the same session as the onboarding flow.\n\n## Ledgerly\n\nOn Ledgerly we redesigned the pricing page twice before launch, and the upgrade prompt inside the app three times. The final version is the one that stopped generating support tickets asking what the difference between the plans was.",
+  "authorName": "Ada Okoro",
+  "authorRole": "Product designer",
+  "authorInit": "AO",
+  "authorColor": "coral"
+}

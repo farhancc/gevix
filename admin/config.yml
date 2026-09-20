@@ -1,0 +1,59 @@
+backend:
+  name: github
+  repo: farhancc/gevix
+  branch: main
+  base_url: https://gevix.in
+  auth_endpoint: api/auth
+
+publish_mode: simple
+media_folder: "assets-src"
+public_folder: "/assets-src"
+
+collections:
+  - name: posts
+    label: "Blog posts"
+    folder: "content/posts"
+    create: true
+    delete: true
+    slug: "{{fields.slug}}"
+    identifier_field: title
+    sortable_fields: ["date", "title"]
+    fields:
+      - { label: "Title", name: title, widget: string }
+      - { label: "Slug", name: slug, widget: string, hint: "URL will be /blog/<slug>. Lowercase, hyphens only, no spaces." }
+      - { label: "Excerpt", name: ex, widget: text, hint: "Shown on cards and used as the meta description." }
+      - { label: "Date", name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, picker_utc: true }
+      - { label: "Category", name: cat, widget: select, options: ["Process", "Design", "Engineering", "SaaS", "Websites", "SEO"] }
+      - { label: "Accent color", name: color, widget: select, options: ["cobalt", "lime", "lilac", "butter", "coral"] }
+      - { label: "Body", name: body, widget: markdown, buttons: ["bold", "quote", "bulleted-list", "code"], editor_components: [] }
+      - { label: "Author name", name: authorName, widget: string }
+      - { label: "Author role", name: authorRole, widget: string }
+      - { label: "Author initials", name: authorInit, widget: string }
+      - { label: "Author color", name: authorColor, widget: select, options: ["cobalt", "lime", "lilac", "butter", "coral"] }
+
+  - name: work
+    label: "Case studies"
+    folder: "content/work"
+    create: true
+    delete: true
+    slug: "{{fields.slug}}"
+    identifier_field: title
+    sortable_fields: ["order", "title"]
+    fields:
+      - { label: "Title", name: title, widget: string }
+      - { label: "Slug / anchor id", name: slug, widget: string, hint: "URL will be /work#<slug>." }
+      - { label: "Order", name: order, widget: number, value_type: int, hint: "Lower numbers appear first." }
+      - { label: "Types", name: dataType, widget: select, multiple: true, options: ["web", "mobile", "saas", "website"] }
+      - { label: "Accent color", name: color, widget: select, options: ["lilac", "lime", "coral", "butter"] }
+      - { label: "Mockup alt text", name: ariaLabel, widget: string, hint: "Screen-reader description of the mockup below." }
+      - { label: "Description", name: description, widget: text }
+      - { label: "What we did", name: bullets, widget: list }
+      - { label: "Tags", name: tags, widget: list, hint: "e.g. Web, SaaS, 2025, 14 weeks" }
+      - { label: "Result line", name: result, widget: string }
+      - label: "Mockup HTML (advanced)"
+        name: mockupHtml
+        widget: code
+        default_language: html
+        allow_language_selection: false
+        output_code_only: true
+        hint: "Raw HTML for the bespoke device mockup. Copy an existing case study's mockup as a starting point and edit the text/numbers inside it."

@@ -1,0 +1,13 @@
+{
+  "title": "Thirty days after launch: what breaks",
+  "slug": "thirty-days",
+  "ex": "The bugs that only real users find, and why we keep the team on for a month.",
+  "date": "2026-05-06",
+  "cat": "Engineering",
+  "color": "butter",
+  "body": "Launch day is calm. The week after is when the real bugs arrive, because real people do things test users never did. Every fixed-scope project includes thirty days of fixes, and this is what those thirty days usually contain.\n\n## What actually breaks\n\n- **Data nobody imagined.** A client name with 400 characters. A ride with zero distance. An invoice for a negative amount.\n- **Old devices.** The phone that's three OS versions behind and belongs to your biggest customer.\n- **Email.** Password resets in spam, receipts with the wrong timezone, a template that looks fine everywhere except Outlook.\n- **The thing that worked on staging.** Usually an environment variable.\n\n## How we run the month\n\nMonitoring is on from day one (Sentry for errors, PostHog for behaviour), and the same team that built the product is on call for it. We triage every morning, fix the same day where we can, and ship a summary each Friday.\n\nBy day thirty the error rate has usually flattened, and the conversation shifts from fixes to what's next. That's when most clients move to a monthly team.",
+  "authorName": "Jonas Weber",
+  "authorRole": "Mobile engineer",
+  "authorInit": "JW",
+  "authorColor": "butter"
+}

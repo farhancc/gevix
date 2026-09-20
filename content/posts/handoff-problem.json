@@ -1,0 +1,13 @@
+{
+  "title": "The handoff problem, and how we avoid it",
+  "slug": "handoff-problem",
+  "ex": "Most products get worse the moment a designer hands over a file. We stopped handing over.",
+  "date": "2026-07-28",
+  "cat": "Design",
+  "color": "lilac",
+  "body": "Every product designer has watched it happen. You spend six weeks on a flow, hand over the file, and three weeks later the build comes back subtly wrong. The spacing is off, the empty state is missing, and a dropdown has become a modal for reasons nobody can explain.\n\nNobody was careless. Handoff is just lossy. A Figma file can't hold intent, and a spec document can't cover every case, so the engineer fills the gaps with guesses.\n\n## Our fix is boring\n\nWe stopped handing over. The designer on a project stays on it through the build, reviews pull requests (yes, actual pull requests) and answers questions in the thread where they come up. The engineer is in the Figma file from week one, commenting on what will be hard before it gets polished.\n\n## What changes\n\n- Empty states, errors and loading states get designed, because the engineer asks for them.\n- Components get built once and reused, because the designer can see the codebase.\n- The \"final\" screen is the one in the browser, not the one in Figma.\n\nIf you already have an engineering team, we still won't hand over a folder of PNGs. We build the component library in your codebase alongside them, and the spec comes with it.",
+  "authorName": "Mara Lindqvist",
+  "authorRole": "Design lead",
+  "authorInit": "ML",
+  "authorColor": "cobalt"
+}

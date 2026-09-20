@@ -1,0 +1,13 @@
+{
+  "title": "Why we start engineering in week five",
+  "slug": "week-five",
+  "ex": "Waiting for every screen to be finished before writing code is how projects slip. Here's how the overlap actually works.",
+  "date": "2026-08-12",
+  "cat": "Process",
+  "color": "lime",
+  "body": "The classic agency plan is a waterfall with nicer fonts: design everything, get sign-off, then build everything. It looks tidy on a Gantt chart and it fails the same way every time. Design runs long because nobody wants to sign off a screen they haven't seen working, and engineering starts late, discovers the awkward parts, and sends the screens back.\n\n## The overlap\n\nOn a Gevix project, engineering starts in week five, when design is roughly a third done. By then the core flow has been tested with users and the data model is stable, which is all a build actually needs to begin. The remaining screens (settings, edge cases, admin) get designed while the first ones are being built.\n\nThat means the engineer sees the design as it forms, and the designer sees the build as it forms. Problems surface in a Slack thread on a Tuesday instead of a review meeting in week ten.\n\n## What it needs\n\n- A written scope, signed in week two, so both disciplines agree on what \"done\" means.\n- One shared Figma file and one repository, with everyone in both.\n- A Friday demo on a staging URL, every week, from week six onwards.\n\n> Design and engineering aren't phases. They're two people looking at the same problem from different chairs.\n\nIt's not a trick to go faster, although projects do finish sooner. It's that the product is better when the two halves of the team argue early and often.",
+  "authorName": "Tomás Ferreira",
+  "authorRole": "Engineering lead",
+  "authorInit": "TF",
+  "authorColor": "lime"
+}
