@@ -48,7 +48,7 @@ collections:
       - { label: "Title", name: title, widget: string }
       - { label: "Slug / anchor id", name: slug, widget: string, hint: "URL will be /work#<slug>." }
       - { label: "Order", name: order, widget: number, value_type: int, hint: "Lower numbers appear first." }
-      - { label: "Types", name: dataType, widget: select, multiple: true, options: ["web", "mobile", "saas", "website"] }
+      - { label: "Types", name: dataType, widget: select, multiple: true, options: ["web", "mobile", "desktop", "saas", "website"] }
       - { label: "Accent color", name: color, widget: select, options: ["lilac", "lime", "coral", "butter"] }
       - { label: "Mockup alt text", name: ariaLabel, widget: string, hint: "Screen-reader description of the mockup below." }
       - { label: "Description", name: description, widget: text }
