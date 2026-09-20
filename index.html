@@ -329,13 +329,6 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 .stack dt{font-weight:700}
 .stack dd{margin:0;opacity:.8}
 
-/* engagement */
-.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.plans article{background:rgba(255,255,255,.6);border-radius:var(--r-lg);padding:clamp(22px,3vw,32px);display:flex;flex-direction:column;gap:12px;min-width:0}
-.plans article p{opacity:.8;font-size:1rem}
-.plans .pill{align-self:flex-start;background:var(--ink);color:var(--paper);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700}
-.plans .best{margin-top:auto;padding-top:12px;font-size:15px;font-weight:600}
-
 /* faq */
 .faq{border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
@@ -373,7 +366,7 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 }
 @media (max-width:820px){
   .section-head{grid-template-columns:1fr}
-  .tiles,.quotes,.plans,.posts{grid-template-columns:1fr}
+  .tiles,.quotes,.posts{grid-template-columns:1fr}
   .tile{min-height:0}
   .contact-grid{grid-template-columns:1fr}
 }
@@ -738,35 +731,6 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
       <div><dt>Backend</dt><dd>Node, Postgres, Prisma, Supabase, Stripe for billing</dd></div>
       <div><dt>Infrastructure</dt><dd>Vercel, AWS, GitHub Actions, Sentry, PostHog</dd></div>
     </dl>
-  </div>
-</section>
-
-<section id="engagement" class="field on-lilac">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Ways to work with us</h2>
-      <p>Pick the shape that fits where your product is. All three come with a named lead you can message directly, and a weekly written update.</p>
-    </div>
-    <div class="plans">
-      <article>
-        <span class="pill">8 to 16 weeks</span>
-        <h3>Fixed-scope project</h3>
-        <p>A defined product, a written scope and a price agreed before work starts. The usual way to build a first version.</p>
-        <p class="best">Best for a new product or a full rebuild</p>
-      </article>
-      <article>
-        <span class="pill">3 months minimum</span>
-        <h3>Monthly team</h3>
-        <p>Two to four Gevix designers and engineers working inside your team, month to month, on a plan you set each week.</p>
-        <p class="best">Best for growing a product after launch</p>
-      </article>
-      <article>
-        <span class="pill">2 weeks</span>
-        <h3>Design sprint</h3>
-        <p>Two weeks from a problem statement to a clickable prototype tested with five users, plus an honest build estimate.</p>
-        <p class="best">Best for deciding what to build first</p>
-      </article>
-    </div>
   </div>
 </section>
 
