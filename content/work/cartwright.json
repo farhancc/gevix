@@ -1,0 +1,26 @@
+{
+  "title": "Cartwright",
+  "slug": "cartwright",
+  "order": 3,
+  "ariaLabel": "Cartwright dispatch console",
+  "dataType": [
+    "web",
+    "mobile"
+  ],
+  "color": "coral",
+  "description": "Dispatch platform for a regional haulage firm: a web console for the office and a driver app with offline proof of delivery. Live positions come from the drivers' phones, not extra hardware.",
+  "bullets": [
+    "Dispatch console for the office",
+    "Driver app with offline proof of delivery",
+    "Live positions from phones, no hardware"
+  ],
+  "tags": [
+    "Web",
+    "iOS",
+    "Android",
+    "2024",
+    "12 weeks, then monthly team"
+  ],
+  "result": "Replaced three spreadsheets and a WhatsApp group for 140 drivers.",
+  "mockupHtml": "          <div class=\"desk\" aria-hidden=\"true\">\n            <div class=\"screen t-paper\">\n              <div class=\"d-side\">\n                <b>Cartwright</b>\n                <span class=\"on\">Dispatch</span><span>Drivers</span><span>Jobs</span><span>Customers</span><span>Settings</span>\n              </div>\n              <div class=\"d-main\">\n                <div class=\"d-head\"><b>Dispatch</b><i>Assign job</i></div>\n                <div class=\"d-split\">\n                  <div class=\"d-map\">\n                    <svg viewBox=\"0 0 100 70\" preserveAspectRatio=\"xMidYMid slice\" aria-hidden=\"true\">\n                      <polyline points=\"8,58 26,44 44,50 60,26 84,20\" fill=\"none\" stroke=\"#12111A\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\" opacity=\".4\"></polyline>\n                      <polyline points=\"14,14 30,22 46,18 70,40 90,52\" fill=\"none\" stroke=\"#12111A\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\" opacity=\".4\"></polyline>\n                      <circle cx=\"44\" cy=\"50\" r=\"2.4\" fill=\"#2B3FFF\"></circle>\n                      <circle cx=\"46\" cy=\"18\" r=\"2.4\" fill=\"#FF5A3C\"></circle>\n                      <circle cx=\"84\" cy=\"20\" r=\"2.4\" fill=\"#12111A\"></circle>\n                      <circle cx=\"90\" cy=\"52\" r=\"2.4\" fill=\"#12111A\"></circle>\n                    </svg>\n                  </div>\n                  <div class=\"d-jobs\">\n                    <div><span>#4821 Leeds to Hull</span><em class=\"ok\">Moving</em></div>\n                    <div><span>#4822 Sheffield depot</span><em>Loading</em></div>\n                    <div><span>#4824 York to Leeds</span><em>Queued</em></div>\n                    <div><span>#4825 Bradford</span><em>Queued</em></div>\n                    <div><span>#4819 Manchester</span><em class=\"ok\">Delivered</em></div>\n                    <div><span>#4818 Doncaster</span><em class=\"ok\">Delivered</em></div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        "
+}

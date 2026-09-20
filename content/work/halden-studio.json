@@ -1,0 +1,24 @@
+{
+  "title": "Halden Studio",
+  "slug": "halden-studio",
+  "order": 4,
+  "ariaLabel": "Halden Studio website home page in a browser window",
+  "dataType": [
+    "website"
+  ],
+  "color": "butter",
+  "description": "A new website for an architecture practice: identity refresh, a project archive with 60 case studies, and a journal the partners write themselves. Built in Framer so the studio edits everything without us.",
+  "bullets": [
+    "Identity refresh and design system",
+    "Framer build with a 60-project archive",
+    "Journal the partners publish themselves"
+  ],
+  "tags": [
+    "Website",
+    "Web design",
+    "2025",
+    "5 weeks"
+  ],
+  "result": "Enquiries up 2.4 times in the first quarter, and every page loads in under a second on 4G.",
+  "mockupHtml": "          <div class=\"browser\" aria-hidden=\"true\">\n            <div class=\"screen t-paper\">\n              <div class=\"b-bar\"><i></i><i></i><i></i><span>haldenstudio.com</span></div>\n              <div class=\"b-site\">\n                <div class=\"b-nav\"><b>Halden</b><span>Projects Studio Journal</span><i>Enquire</i></div>\n                <div class=\"b-hero\">\n                  <div><p class=\"b-h\">Buildings that age well.</p><p>An architecture studio in Bergen working on homes, schools and small civic buildings.</p></div>\n                  <div class=\"b-img\"></div>\n                </div>\n                <div class=\"b-grid\"><i style=\"background:#DCCBFF\"></i><i style=\"background:#FFD53D\"></i><i style=\"background:#FF5A3C\"></i></div>\n              </div>\n            </div>\n          </div>\n        "
+}

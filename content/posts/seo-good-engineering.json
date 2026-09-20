@@ -1,0 +1,13 @@
+{
+  "title": "The SEO work that's just good engineering",
+  "slug": "seo-good-engineering",
+  "ex": "Most of what moves rankings on a new site is markup, speed and structure. Here's the checklist we ship with.",
+  "date": "2026-04-24",
+  "cat": "SEO",
+  "color": "cobalt",
+  "body": "There's a version of SEO that's tricks: keyword stuffing, link schemes, content farms. We don't do that. There's another version that's mostly just building the site properly, and we do that on every project whether or not anyone says \"SEO\".\n\n## The checklist we ship with\n\n- Semantic markup: one `h1` per page, real headings, landmarks, lists that are lists.\n- Core Web Vitals in the green: largest paint under 2.5 seconds, no layout shift, inputs that respond.\n- Meta descriptions and Open Graph tags written by a person, per page.\n- Structured data where it applies: organisation, articles, products, FAQs.\n- A sitemap, sensible URLs, and redirects for every old URL when we replace a site.\n- Images with real alt text, sized and lazy-loaded.\n\n## What's separate\n\nKeyword research, a content plan, and monthly work on rankings are a different job with a different rhythm. We offer it as a monthly engagement, usually paired with a writer on your side.\n\n> Good rankings on a new site are mostly a side effect of a site that's fast, clear and correct.",
+  "authorName": "Tomás Ferreira",
+  "authorRole": "Engineering lead",
+  "authorInit": "TF",
+  "authorColor": "lime"
+}

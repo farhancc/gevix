@@ -1,0 +1,13 @@
+{
+  "title": "What a two-week design sprint actually produces",
+  "slug": "design-sprint",
+  "ex": "A prototype, five user sessions, and a build estimate you can take to your board.",
+  "date": "2026-06-03",
+  "cat": "Process",
+  "color": "lilac",
+  "body": "\"Design sprint\" has become a vague term. Here's precisely what ours produces in two weeks, so you can decide whether it's worth it.\n\n## Week one\n\nMonday and Tuesday are interviews: your team, then five people who'd use the product. Wednesday we map the core flow on a wall (or a FigJam board). Thursday and Friday are sketching, in low fidelity, on purpose.\n\n## Week two\n\nMonday to Wednesday we build a clickable prototype of the one flow that matters most. Thursday we test it with five users, recorded. Friday we write up what happened and what we'd change.\n\n## What you leave with\n\n- A Figma prototype you can put in front of investors or your board.\n- Five recorded user sessions and a two-page summary.\n- A build estimate for a first version, in weeks and cost, with the assumptions written down.\n- An honest answer on whether to build it at all.\n\n> About one sprint in four ends with \"don't build this yet\". That's the sprint paying for itself.",
+  "authorName": "Mara Lindqvist",
+  "authorRole": "Design lead",
+  "authorInit": "ML",
+  "authorColor": "cobalt"
+}

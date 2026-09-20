@@ -1,0 +1,25 @@
+{
+  "title": "Marlow Interiors",
+  "slug": "marlow-interiors",
+  "order": 8,
+  "ariaLabel": "Marlow Interiors website",
+  "dataType": [
+    "website",
+    "web"
+  ],
+  "color": "lime",
+  "description": "Portfolio site and enquiry flow for an interior design practice, with a private client area where projects, mood boards and invoices live.",
+  "bullets": [
+    "Framer site the studio updates weekly",
+    "Client area built in Next.js with magic-link sign-in",
+    "Technical SEO and local search setup"
+  ],
+  "tags": [
+    "Website",
+    "Web app",
+    "2024",
+    "6 weeks"
+  ],
+  "result": "Ranks first locally for interior design and enquiries doubled in a quarter.",
+  "mockupHtml": "          <div class=\"browser\" aria-hidden=\"true\"><div class=\"screen t-paper\">\n  <div class=\"b-bar\"><i></i><i></i><i></i><span>marlowinteriors.co.uk</span></div>\n  <div class=\"b-site\">\n    <div class=\"b-nav\"><b>Marlow</b><span>Projects Services About</span><i>Enquire</i></div>\n    <div class=\"b-hero\"><div><p class=\"b-h\">Rooms that feel finished.</p><p>Interior design for homes and boutique hotels across the south coast.</p></div><div class=\"b-img\" style=\"background:#FF5A3C\"></div></div>\n    <div class=\"b-grid\"><i style=\"background:#DCCBFF\"></i><i style=\"background:#2B3FFF\"></i><i style=\"background:#FFD53D\"></i></div>\n  </div>\n</div></div>\n        "
+}

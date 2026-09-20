@@ -1,0 +1,24 @@
+{
+  "title": "Northloop",
+  "slug": "northloop",
+  "order": 2,
+  "ariaLabel": "Northloop ride summary screen",
+  "dataType": [
+    "mobile"
+  ],
+  "color": "lime",
+  "description": "Training app for road cyclists with ride plans, a coach chat and Strava import. One React Native codebase for both stores, with a small Node service for the coaching queue.",
+  "bullets": [
+    "React Native app for iOS and Android",
+    "Strava import and a coach chat with a queue",
+    "Store submission and first-year updates"
+  ],
+  "tags": [
+    "iOS",
+    "Android",
+    "2024",
+    "16 weeks"
+  ],
+  "result": "4.8 stars on both stores and 31,000 installs in the first year.",
+  "mockupHtml": "          <figure class=\"phone\" aria-hidden=\"true\">\n            <div class=\"screen t-paper\">\n              <div class=\"p-status\"><span>9:41</span><i></i></div>\n              <div class=\"p-map\">\n                <svg viewBox=\"0 0 100 75\" preserveAspectRatio=\"xMidYMid slice\" aria-hidden=\"true\">\n                  <polyline points=\"10,60 24,44 40,50 52,30 70,36 88,16\" fill=\"none\" stroke=\"#2B3FFF\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"></polyline>\n                  <circle cx=\"10\" cy=\"60\" r=\"2.6\" fill=\"#12111A\"></circle>\n                  <circle cx=\"88\" cy=\"16\" r=\"2.6\" fill=\"#2B3FFF\"></circle>\n                </svg>\n              </div>\n              <div>\n                <div class=\"p-small\">Sunday long ride</div>\n                <div class=\"p-big\">54.1 km</div>\n              </div>\n              <div class=\"p-grid\">\n                <div><span>Time</span><b>2:14:08</b></div>\n                <div><span>Elevation</span><b>812 m</b></div>\n                <div><span>Average</span><b>24.1 km/h</b></div>\n                <div><span>Effort</span><b>High</b></div>\n              </div>\n              <div class=\"p-btn\">Share ride</div>\n              <div class=\"p-tabs\"><i></i><i class=\"on\"></i><i></i><i></i></div>\n            </div>\n          </figure>\n        "
+}

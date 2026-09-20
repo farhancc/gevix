@@ -1,0 +1,24 @@
+{
+  "title": "Bright &amp; Co",
+  "slug": "bright-co",
+  "order": 7,
+  "ariaLabel": "Bright and Co online shop",
+  "dataType": [
+    "website"
+  ],
+  "color": "coral",
+  "description": "Brand site and online shop for a lighting maker: product photography direction, a Shopify build behind a Next.js front end, and a checkout tuned for a high-value single purchase.",
+  "bullets": [
+    "Web design and art direction",
+    "Next.js storefront on Shopify",
+    "Core Web Vitals in the green on every page"
+  ],
+  "tags": [
+    "Website",
+    "E-commerce",
+    "2025",
+    "7 weeks"
+  ],
+  "result": "Checkout conversion up from 1.9% to 3.4% in the first month.",
+  "mockupHtml": "          <div class=\"browser\" aria-hidden=\"true\"><div class=\"screen t-paper\">\n  <div class=\"b-bar\"><i></i><i></i><i></i><span>brightandco.com</span></div>\n  <div class=\"b-site\">\n    <div class=\"b-nav\"><b>Bright &amp; Co</b><span>Shop Journal Studio</span><i>Shop</i></div>\n    <div class=\"b-hero\"><div><p class=\"b-h\">Lamps made in Sheffield.</p><p>Hand-finished lighting, shipped in three days.</p></div><div class=\"b-img\" style=\"background:#DCCBFF\"></div></div>\n    <div class=\"b-grid\"><i style=\"background:#C8F04A\"></i><i style=\"background:#FFD53D\"></i><i style=\"background:#2B3FFF\"></i></div>\n  </div>\n</div></div>\n        "
+}

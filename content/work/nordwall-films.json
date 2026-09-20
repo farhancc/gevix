@@ -1,0 +1,25 @@
+{
+  "title": "Nordwall Films",
+  "slug": "nordwall-films",
+  "order": 6,
+  "ariaLabel": "Nordwall Films scheduling console",
+  "dataType": [
+    "saas",
+    "web"
+  ],
+  "color": "butter",
+  "description": "Production scheduling SaaS for a film company that grew into a product for other studios: crew availability, call sheets, budgets and invoicing in one place.",
+  "bullets": [
+    "Multi-tenant SaaS with per-studio billing",
+    "Call sheets generated and sent from the schedule",
+    "Admin for the Nordwall team to onboard studios"
+  ],
+  "tags": [
+    "SaaS",
+    "Web",
+    "2024",
+    "16 weeks, then monthly team"
+  ],
+  "result": "Now used by nine production companies; call sheets go out in minutes instead of an evening.",
+  "mockupHtml": "          <div class=\"desk\" aria-hidden=\"true\"><div class=\"screen t-paper\">\n  <div class=\"d-side\"><b>Nordwall</b><span class=\"on\">Schedule</span><span class=\"\">Productions</span><span class=\"\">Crew</span><span class=\"\">Invoices</span><span class=\"\">Settings</span></div>\n  <div class=\"d-main\">\n    <div class=\"d-head\"><b>Schedule</b><i>Add shoot day</i></div>\n    <div class=\"d-rows\"><div class=\"d-th\"><span>Production</span><span>Dates</span><span>Crew</span><span>Status</span></div><div><span>Northern Light</span><span>3 to 9 Sep</span><span>14</span><em class=\"ok\">Shooting</em></div><div><span>Harbour</span><span>12 to 14 Sep</span><span>6</span><em class=\"\">Prep</em></div><div><span>Still Water</span><span>20 Sep</span><span>9</span><em class=\"\">Prep</em></div><div><span>Kite</span><span>28 Sep to 2 Oct</span><span>18</span><em class=\"\">Holding</em></div><div><span>Ledger (ad)</span><span>6 Oct</span><span>4</span><em class=\"ok\">Confirmed</em></div></div>\n  </div>\n</div></div>\n        "
+}
