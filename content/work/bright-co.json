@@ -3,21 +3,21 @@
   "dataType": [
     "website"
   ],
-  "slug": "kiyano-icecreams",
+  "slug": "kiyano-icecream",
   "ariaLabel": "Kiyano",
   "order": 7,
   "mockupHtml": "          <div class=\"browser\" aria-hidden=\"true\"><div class=\"screen t-paper\">\n  <div class=\"b-bar\"><i></i><i></i><i></i><span>brightandco.com</span></div>\n  <div class=\"b-site\">\n    <div class=\"b-nav\"><b>Bright &amp; Co</b><span>Shop Journal Studio</span><i>Shop</i></div>\n    <div class=\"b-hero\"><div><p class=\"b-h\">Lamps made in Sheffield.</p><p>Hand-finished lighting, shipped in three days.</p></div><div class=\"b-img\" style=\"background:#DCCBFF\"></div></div>\n    <div class=\"b-grid\"><i style=\"background:#C8F04A\"></i><i style=\"background:#FFD53D\"></i><i style=\"background:#2B3FFF\"></i></div>\n  </div>\n</div></div>\n        ",
   "bullets": [
     "Web design and art direction",
-    "Next.js storefront Core Web Vitals in the green on every page"
+    "Next.js storefront Core Web Vitals in the green on every page. created business email"
   ],
-  "title": "Kiyano Icecreams",
+  "title": "Kiyano Icecream",
   "tags": [
     "Website",
     "2026"
   ],
-  "link": "https://kiyanoicecreams.in",
+  "link": "https://kiyanoicecream.in",
   "image": "/assets-src/kiyano-ice-cream-website-mockup.png",
-  "description": "Kiyano icecreams is a new ice cream manufacturing and destribution unit",
+  "description": "Kiyano icecream is a new ice cream manufacturing and destribution unit",
   "result": "Fast page load (1.5 sec)"
 }
