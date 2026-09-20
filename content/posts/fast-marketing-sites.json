@@ -2,7 +2,6 @@
   "authorRole": "Product designer",
   "body": "A marketing site has one job: let a small team publish quickly without breaking anything. Most of the sites we inherit fail at that. A new page needs an engineer, so new pages don't get made.\n\n## Why Framer\n\nFor most studios and startups we build the marketing site in Framer. Designers work directly in it, the CMS is built in, hosting and forms are handled, and the output is fast without tuning. Halden Studio's site has sixty case studies and a journal, and the partners publish both themselves.\n\n## How we set it up\n\n- A component library with the ten or so blocks the team actually needs. Not forty.\n- CMS collections with sensible required fields, so a post can't go out without an image.\n- Performance budgets: every page under a second on 4G, checked before handover.\n- A one-hour recorded walkthrough, so the next hire can learn it too.\n\n## When we use Next.js instead\n\nIf the site shares components with a product, needs authentication, or pulls live data, it's Next.js. Same design system, more moving parts.",
   "color": "lime",
-  "coverImage": "/assets-src/16062026_sedeer-portal-cover-design_v04_an.jpg.jpeg",
   "slug": "fast-marketing-sites",
   "date": "2026-05-19",
   "ex": "How we set up Framer so a two-person marketing team ships pages weekly.",

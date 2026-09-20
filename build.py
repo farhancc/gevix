@@ -294,6 +294,10 @@ work_html = inject(work_html, "WORK-LD", work_ld_json(work_items))
 work_html = re.sub(r"Showing \d+ projects", f"Showing {len(work_items)} projects", work_html)
 (ROOT / "work.html").write_text(work_html)
 
+index_html = (ROOT / "index.html").read_text()
+index_html = inject(index_html, "HOME-POSTS", "\n".join(card(p) for p in posts[:3]))
+(ROOT / "index.html").write_text(index_html)
+
 latest = max(p["date"] for p in posts)
 urls = [(SITE + "/", latest), (SITE + "/work", latest), (SITE + "/blog", latest)]
 urls += [(f"{SITE}/blog/{p['slug']}", p["date"]) for p in posts]
