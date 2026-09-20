@@ -6,7 +6,7 @@
   "slug": "olorental",
   "ariaLabel": "OLO Rental landing page",
   "order": 2,
-  "mockupHtml": "          <div class=\"desk\" aria-hidden=\"true\"><div class=\"screen t-paper\">\n  <div class=\"d-side\"><b>Pillar</b><span class=\"\">Today</span><span class=\"on\">Appointments</span><span class=\"\">Patients</span><span class=\"\">Messages</span><span class=\"\">Settings</span></div>\n  <div class=\"d-main\">\n    <div class=\"d-head\"><b>Appointments</b><i>Book slot</i></div>\n    <div class=\"d-rows\"><div class=\"d-th\"><span>Patient</span><span>Time</span><span>Clinician</span><span>Status</span></div><div><span>Amira Hassan</span><span>09:20</span><span>Dr Adeyemi</span><em class=\"ok\">Checked in</em></div><div><span>Ben Okafor</span><span>09:40</span><span>Nurse Lin</span><em class=\"\">Waiting</em></div><div><span>Chloe Marsh</span><span>10:00</span><span>Dr Adeyemi</span><em class=\"\">Waiting</em></div><div><span>Dev Patel</span><span>10:20</span><span>Nurse Lin</span><em class=\"warn\">Cancelled</em></div><div><span>Elena Rossi</span><span>10:40</span><span>Dr Adeyemi</span><em class=\"\">Booked</em></div></div>\n  </div>\n</div></div>\n        ",
+  "mockupHtml": "",
   "bullets": [
     "We Designed and developed a moibile responsive landingpage for thier mobile application"
   ],
@@ -16,6 +16,6 @@
     "2025"
   ],
   "image": "/assets-src/chatgpt-image-sep-20-2026-09_12_06-am.png",
-  "description": "Patient portal and clinic console for a group of eleven GP practices: booking, repeat prescriptions, secure messages and a check-in flow the reception desk actually uses.",
+  "description": "olO rental is a property management app ",
   "result": "Phone calls to reception down 38% in the first two months."
 }
