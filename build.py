@@ -194,6 +194,7 @@ def article_page(i, p):
 {ARTICLE_CSS}</style>
 </head>
 <body>
+<div class="scroll-progress" aria-hidden="true"></div>
 {header}
 
 <main>
