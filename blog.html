@@ -390,6 +390,39 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 .foot nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}
 .foot .copy{margin-left:auto;opacity:.7}
 
+/* motion */
+.top nav a,.menu-list a,.foot nav a{transition:background-color .15s ease}
+.faq summary{transition:color .15s ease}
+.faq summary:hover{color:var(--cobalt)}
+.faq summary:hover::after{transform:rotate(90deg)}
+.faq details[open] summary:hover::after{transform:rotate(45deg)}
+.tile{transition:transform .2s ease}
+.tile:hover{transform:translateY(-4px)}
+.tile .glyph{transition:transform .25s ease}
+.tile:hover .glyph{transform:scale(1.08) rotate(-4deg)}
+.quotes blockquote,.quote-featured{transition:transform .2s ease}
+.quotes blockquote:hover,.quote-featured:hover{transform:translateY(-3px)}
+.stack div{transition:background-color .15s ease}
+.stack div:hover{background:var(--hover)}
+.brand img{transition:transform .2s ease}
+.brand:hover img{transform:rotate(-4deg) scale(1.06)}
+@media (prefers-reduced-motion:reduce){
+  .tile:hover,.tile:hover .glyph,.quotes blockquote:hover,.quote-featured:hover,.brand:hover img{transform:none}
+}
+
+/* scroll reveal */
+@supports (animation-timeline:view()){
+  .tile,.work>li,.quotes blockquote,.quote-featured,.post,.faq details,.stack>div,.note,.section-head,.steps>li,.plans article,.featured{
+    animation:reveal-up linear both;
+    animation-timeline:view();
+    animation-range:entry;
+  }
+  @media (prefers-reduced-motion:reduce){
+    .tile,.work>li,.quotes blockquote,.quote-featured,.post,.faq details,.stack>div,.note,.section-head,.steps>li,.plans article,.featured{animation:none}
+  }
+}
+@keyframes reveal-up{from{opacity:0;translate:0 28px}to{opacity:1;translate:0 0}}
+
 /* responsive */
 @media (max-width:1000px){
   .tiles{grid-template-columns:repeat(2,1fr)}
@@ -427,7 +460,12 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 .filters button{font:inherit;text-decoration:none;font-weight:700;font-size:14px;padding:8px 16px;border-radius:999px;border:0;background:rgba(18,17,26,.1);color:var(--ink);cursor:pointer}
 .filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
 .filters button:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
-.featured{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:0;background:var(--surface);border-radius:var(--r-lg);overflow:hidden;text-decoration:none;color:var(--fg);margin-bottom:clamp(28px,4vw,48px)}
+.filters button{transition:transform .15s ease,background-color .15s ease,color .15s ease}
+.filters button:hover{transform:translateY(-2px)}
+@media (prefers-reduced-motion:reduce){.filters button:hover{transform:none}}
+.featured{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:0;background:var(--surface);border-radius:var(--r-lg);overflow:hidden;text-decoration:none;color:var(--fg);margin-bottom:clamp(28px,4vw,48px);transition:transform .2s ease}
+.featured:hover{transform:translateY(-3px)}
+@media (prefers-reduced-motion:reduce){.featured:hover{transform:none}}
 .featured[hidden]{display:none}
 .featured .cover{min-height:280px;display:flex;align-items:flex-start;padding:20px;color:var(--ink)}
 .featured .cover span{background:rgba(18,17,26,.12);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700}

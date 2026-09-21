@@ -396,6 +396,39 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 .foot nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}
 .foot .copy{margin-left:auto;opacity:.7}
 
+/* motion */
+.top nav a,.menu-list a,.foot nav a{transition:background-color .15s ease}
+.faq summary{transition:color .15s ease}
+.faq summary:hover{color:var(--cobalt)}
+.faq summary:hover::after{transform:rotate(90deg)}
+.faq details[open] summary:hover::after{transform:rotate(45deg)}
+.tile{transition:transform .2s ease}
+.tile:hover{transform:translateY(-4px)}
+.tile .glyph{transition:transform .25s ease}
+.tile:hover .glyph{transform:scale(1.08) rotate(-4deg)}
+.quotes blockquote,.quote-featured{transition:transform .2s ease}
+.quotes blockquote:hover,.quote-featured:hover{transform:translateY(-3px)}
+.stack div{transition:background-color .15s ease}
+.stack div:hover{background:var(--hover)}
+.brand img{transition:transform .2s ease}
+.brand:hover img{transform:rotate(-4deg) scale(1.06)}
+@media (prefers-reduced-motion:reduce){
+  .tile:hover,.tile:hover .glyph,.quotes blockquote:hover,.quote-featured:hover,.brand:hover img{transform:none}
+}
+
+/* scroll reveal */
+@supports (animation-timeline:view()){
+  .tile,.work>li,.quotes blockquote,.quote-featured,.post,.faq details,.stack>div,.note,.section-head,.steps>li,.plans article,.featured{
+    animation:reveal-up linear both;
+    animation-timeline:view();
+    animation-range:entry;
+  }
+  @media (prefers-reduced-motion:reduce){
+    .tile,.work>li,.quotes blockquote,.quote-featured,.post,.faq details,.stack>div,.note,.section-head,.steps>li,.plans article,.featured{animation:none}
+  }
+}
+@keyframes reveal-up{from{opacity:0;translate:0 28px}to{opacity:1;translate:0 0}}
+
 /* responsive */
 @media (max-width:1000px){
   .tiles{grid-template-columns:repeat(2,1fr)}
@@ -447,8 +480,13 @@ h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em;line-height:1.25}
 .article blockquote{margin:32px 0;padding:22px 28px;border-left:6px solid var(--accent,var(--cobalt));border-radius:0 var(--r-md) var(--r-md) 0;background:var(--surface);font-family:var(--display);font-weight:500;font-size:clamp(1.1rem,1.8vw,1.35rem);line-height:1.4;letter-spacing:-.01em}
 .article code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9em;background:var(--chip);padding:2px 6px;border-radius:6px}
 .post-nav{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:56px;padding-top:32px;border-top:1px solid var(--line)}
-.post-nav a{text-decoration:none;display:flex;flex-direction:column;gap:6px;padding:18px 20px;border-radius:var(--r-md);background:var(--surface)}
-.post-nav a:hover{background:var(--hover)}
+.post-nav a{text-decoration:none;display:flex;flex-direction:column;gap:6px;padding:18px 20px;border-radius:var(--r-md);background:var(--surface);transition:transform .15s ease,background-color .15s ease}
+.post-nav a:hover{background:var(--hover);transform:translateY(-3px)}
+@media (prefers-reduced-motion:reduce){.post-nav a:hover{transform:none}}
+@supports (animation-timeline:view()){
+  .article blockquote,.post{animation:reveal-up linear both;animation-timeline:view();animation-range:entry}
+  @media (prefers-reduced-motion:reduce){.article blockquote,.post{animation:none}}
+}
 .post-nav a span{font-size:13px;font-weight:700;opacity:.65}
 .post-nav a b{font-family:var(--display);font-weight:600;font-size:1rem;line-height:1.3}
 .post-nav a.next{text-align:right;align-items:flex-end}
